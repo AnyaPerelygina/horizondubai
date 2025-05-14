@@ -9,7 +9,7 @@ import '@styles/global.scss';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: (
       <>
         <Root />
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
         path: '/'
       }
     ]
-  },
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
