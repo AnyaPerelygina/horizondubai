@@ -8,6 +8,7 @@
     "build": "webpack --mode production",
     "deploy": "npm run build && gh-pages -d dist"
   },
+  "homepage": "https://anyaperelygina.github.io/horizondubai",
   "keywords": [],
   "author": "",
   "license": "ISC",
