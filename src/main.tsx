@@ -7,8 +7,6 @@ import Home from '@pages/Home/Home';
 
 import '@styles/global.scss';
 
-console.log('process.env: ', process.env)
-
 const router = createBrowserRouter([
   {
     path: '/',
@@ -25,7 +23,8 @@ const router = createBrowserRouter([
     ]
   }
 ], {
-  basename: process.env.NODE_ENV === 'development' ? '/' : '/horizondubai',
+  basename: process.env.BASE_URL,
+  // basename: process.env.NODE_ENV === 'development' ? '/' : '/horizondubai',
 });
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

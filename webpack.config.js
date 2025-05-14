@@ -54,7 +54,7 @@ module.exports = (env, argv) => {
     plugins: [
       new webpack.DefinePlugin({
         'process.env':{
-          'NODE_ENV': JSON.stringify(argv.mode),
+          'BASE_URL': JSON.stringify(argv.mode === 'production' ? '/horizondubai' : '/'),
         }
       }),
       new HtmlWebpackPlugin({
