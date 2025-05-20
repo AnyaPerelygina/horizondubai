@@ -45,10 +45,11 @@ module.exports = (env, argv) => {
           use: [
             'style-loader',
             'css-loader',
+            'postcss-loader',
             'sass-loader',
           ],
         }
-        
+
       ],
     },
     plugins: [

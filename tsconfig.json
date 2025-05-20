@@ -13,9 +13,9 @@
       "paths": {
         "@styles/*": ["styles/*"],
         "@components/*": ["components/*"],
-        "@pages/*": ["pages/*"]
+        "@pages/*": ["pages/*"],
+        "@app/*": ["app/*"]
       }
     },
     "include": ["src"]
   }
-  

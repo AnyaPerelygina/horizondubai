@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { store } from './app/store';
 
 import Root from '@pages/root';
 import Home from '@pages/Home/Home';
@@ -23,12 +25,13 @@ const router = createBrowserRouter([
     ]
   }
 ], {
-  basename: process.env.BASE_URL,
-  // basename: process.env.NODE_ENV === 'development' ? '/' : '/horizondubai',
+  basename: process.env.BASE_URL
 });
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 )
