@@ -1,0 +1,44 @@
+// Colors
+// ---------------------------------
+
+// default
+$color-default-black:               #000000;
+$color-default-white:               #ffffff;
+$color-transparent:                 rgba(255, 255, 255, 0);
+
+// project palette
+// для нейминга цветов используется https://www.htmlcsscolor.com/hex/334482
+$color-java:                        #208B95;
+$color-zambezi:                     #595959;
+
+// Typography
+// ---------------------------------
+
+$fz-default:                        16px;
+$ff-commissioner:                   'Commissioner', 'Arial', sans-serif;
+$ff-neutral-face:                   'Neutral Face', 'Arial', sans-serif;
+
+// Animation
+// ---------------------------------
+
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
+$trans-600:                         0.6s $tf-default;
+$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+// Viewports
+// ---------------------------------
+
+$vp-320:                            320px;
+$vp-768:                            768px;
+$vp-1024:                           1024px;
+$vp-1920:                           1920px;
+
+// breakpoints
+$desktop: 1920px;
+$tablet: 1024px;
+$mobile: 320px;
+
+// retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dpi;

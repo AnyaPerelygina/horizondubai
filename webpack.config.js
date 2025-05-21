@@ -8,11 +8,11 @@ module.exports = (env, argv) => {
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js',
-      publicPath: '',
+      publicPath: '/',
       clean: true,
     },
     resolve: {
-      extensions: ['.ts', '.tsx', '.js', '.scss'],
+      extensions: ['.ts', '.tsx', '.js', '.jsx', '.css', '.scss'],
       alias: {
         '@styles': path.resolve(__dirname, 'src/styles'),
         '@components': path.resolve(__dirname, 'src/components'),
@@ -60,6 +60,7 @@ module.exports = (env, argv) => {
       }),
       new HtmlWebpackPlugin({
         template: './index.html',
+        favicon: './favicon.ico',
       }),
     ],
     devServer: {
