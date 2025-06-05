@@ -4,12 +4,12 @@ import Footer from '@components/Footer/Footer';
 
 export default function Root() {
   return (
-    <>
+    <div className='wrapper'>
       <Header />
       <main>
         <Outlet />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

@@ -8,8 +8,7 @@ import { store } from './app/store';
 import Root from '@pages/root';
 import Home from '@pages/Home/Home';
 
-import '@styles/global.scss';
-import '@styles/fonts.scss';
+import '@styles/style.scss';
 
 const router = createBrowserRouter([
   {

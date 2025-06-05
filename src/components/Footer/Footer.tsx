@@ -1,9 +1,12 @@
-import React from 'react';
+import Logo from '@ui/logo/logo';
+import { Container } from '@ui/container/container';
 
 const Footer = () => {
   return (
     <footer>
-      <p>подвал</p>
+      <Container>
+        <Logo />
+      </Container>
     </footer>
   );
 };

@@ -17,6 +17,8 @@ module.exports = (env, argv) => {
         '@styles': path.resolve(__dirname, 'src/styles'),
         '@components': path.resolve(__dirname, 'src/components'),
         '@pages': path.resolve(__dirname, 'src/pages'),
+        '@assets': path.resolve(__dirname, 'src/assets'),
+        '@ui': path.resolve(__dirname, 'src/ui'),
       },
     },
     module: {
@@ -33,7 +35,10 @@ module.exports = (env, argv) => {
             {
               loader: 'css-loader',
               options: {
-                modules: true
+                modules: {
+                  localIdentName: '[folder]__[local]__[hash:base64:5]',
+                },
+                esModule: false,
               }
             },
             'sass-loader',
@@ -48,8 +53,11 @@ module.exports = (env, argv) => {
             'postcss-loader',
             'sass-loader',
           ],
+        },
+        {
+          test: /\.(png|jpe?g|gif|svg|webp)$/i,
+          type: 'asset/resource',
         }
-
       ],
     },
     plugins: [

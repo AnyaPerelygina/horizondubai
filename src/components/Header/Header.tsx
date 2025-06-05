@@ -1,9 +1,12 @@
-import React from 'react';
+import Logo from '@ui/logo/logo';
+import { Container } from '@ui/container/container';
 
 const Header = () => {
   return (
     <header>
-      <p>шапка</p>
+      <Container>
+        <Logo />
+      </Container>
     </header>
   );
 };

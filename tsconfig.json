@@ -14,7 +14,9 @@
         "@styles/*": ["styles/*"],
         "@components/*": ["components/*"],
         "@pages/*": ["pages/*"],
-        "@app/*": ["app/*"]
+        "@app/*": ["app/*"],
+        "@assets/*": ["assets/*"],
+        "@ui/*": ["ui/*"]
       }
     },
     "include": ["src"]
