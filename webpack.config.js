@@ -10,7 +10,6 @@ module.exports = (env, argv) => {
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js',
-      // publicPath: '/',
       publicPath: isProd ? '/horizondubai/' : '/',
       clean: true,
     },
@@ -66,7 +65,6 @@ module.exports = (env, argv) => {
     plugins: [
       new webpack.DefinePlugin({
         'process.env':{
-          // 'BASE_URL': JSON.stringify(argv.mode === 'production' ? '/horizondubai' : '/'),
           BASE_URL: JSON.stringify(isProd ? '/horizondubai' : '/'),
         }
       }),

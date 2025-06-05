@@ -1,0 +1,22 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link {
+  color: $color-default-black;
+  transition: color $trans-default;
+
+  @include hover-focus {
+    color: $color-java;
+  }
+}

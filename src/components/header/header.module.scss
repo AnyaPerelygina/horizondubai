@@ -1,0 +1,16 @@
+@use '../../styles/variables.scss' as *;
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 50px;
+}
+
+.navigation {
+  max-width: 500px;
+  width: 100%;
+
+  color: $color-default-black;
+}
