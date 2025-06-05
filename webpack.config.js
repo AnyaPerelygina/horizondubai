@@ -3,12 +3,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = (env, argv) => {
+  const isProd = argv.mode === 'production';
+
   return {
     entry: './src/main.tsx',
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js',
-      publicPath: '/',
+      // publicPath: '/',
+      publicPath: isProd ? '/horizondubai/' : '/',
       clean: true,
     },
     resolve: {
@@ -63,12 +66,13 @@ module.exports = (env, argv) => {
     plugins: [
       new webpack.DefinePlugin({
         'process.env':{
-          'BASE_URL': JSON.stringify(argv.mode === 'production' ? '/horizondubai' : '/'),
+          // 'BASE_URL': JSON.stringify(argv.mode === 'production' ? '/horizondubai' : '/'),
+          BASE_URL: JSON.stringify(isProd ? '/horizondubai' : '/'),
         }
       }),
       new HtmlWebpackPlugin({
         template: './index.html',
-        favicon: './favicon.ico',
+        favicon: path.resolve(__dirname, 'favicon.ico'),
       }),
     ],
     devServer: {
