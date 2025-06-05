@@ -1,6 +1,7 @@
 import Logo from '@ui/logo/logo';
 import { Container } from '@ui/container/container';
 import Nav from '@components/nav/nav';
+import Favorites from '@components/favorites/favorites';
 
 import MarkerSvg from '@assets/marker.svg';
 
@@ -36,9 +37,10 @@ const Header = () => {
         <Logo />
         <Nav navLinks={navLinks} className={styles.navigation} />
         <div className={styles.marker}>
-          <img src={MarkerSvg} alt='Маркер' />
+          <MarkerSvg />
           <span>Дубай</span>
         </div>
+        <Favorites />
       </Container>
     </header>
   );
