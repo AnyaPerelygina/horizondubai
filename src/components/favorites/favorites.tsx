@@ -7,7 +7,7 @@ import styles from './favorites.module.scss';
 const Favorites = () => {
   return (
     <div className={styles.root}>
-      <Link to={'#'}>
+      <Link to={'#'} className={styles.link}>
         <FavoritesIcon />
       </Link>
     </div>
