@@ -10,14 +10,29 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 15px;
+  gap: 10px;
 }
 
 .link {
   color: $color-default-black;
-  transition: color $trans-default;
 
-  @include hover-focus {
-    color: $color-java;
+  svg {
+    transition: color $trans-default;
+
+    @include hover-focus {
+      color: $color-java;
+    }
+  }
+}
+
+.customLink {
+  color: $color-java;
+
+  svg {
+    transition: color $trans-default;
+
+    @include hover-focus {
+      color: $color-default-black;
+    }
   }
 }

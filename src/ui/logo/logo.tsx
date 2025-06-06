@@ -11,9 +11,9 @@ const Logo = () => {
   return (
     <div className={styles.root}>
       {isHome ? (
-        <img src={LogoImg} alt="Logo" />
+        <img src={LogoImg} alt="Logo" width={149} height={52} />
       ): <Link to="/home">
-        <img src={LogoImg} alt="Logo" />
+        <img src={LogoImg} alt="Logo" width={149} height={52} />
       </Link>
       }
     </div>

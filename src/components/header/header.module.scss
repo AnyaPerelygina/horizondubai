@@ -5,11 +5,30 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  column-gap: 50px;
+  column-gap: 10px;
+}
+
+.wrapper1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 15px;
+
+  width: 100%;
+  max-width: 700px;
+}
+
+.wrapper2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 10px;
 }
 
 .navigation {
-  max-width: 500px;
+  max-width: 515px;
   width: 100%;
 
   color: $color-default-black;

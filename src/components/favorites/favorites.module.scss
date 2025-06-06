@@ -1,6 +1,10 @@
 @use '../../styles/variables.scss' as *;
 @use '../../styles/mixins.scss' as *;
 
+.root {
+  margin: 0 20px;
+}
+
 .link {
   color: $color-default-black;
 
