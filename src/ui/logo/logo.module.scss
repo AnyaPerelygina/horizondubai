@@ -1,8 +1,19 @@
+@use '../../styles/mixins.scss' as *;
+
 .root {
+  min-width: 149px;
+  width: 149px;
+  height: 51px;
+
+  @include vp-1023 {
+    min-width: 123px;
+    width: 123px;
+    height: 41px;
+  }
+
   img {
-    max-width: 149px;
     width: 100%;
-    height: 100px;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
   }
 }

@@ -5,7 +5,7 @@ import styles from './social-media.module.scss';
 
 const SocialMedia= ({ onLinkClick, className, socialMediaLinks }: SocialMediaProps) => {
   return (
-    <nav className={`${styles.nav} ${className}`}>
+    <div className={`${styles.root} ${className}`}>
       <ul className={styles.list}>
         {socialMediaLinks.map(({ href, Icon, label, className: customLink }) => (
           <li key={href} className={styles.item}>
@@ -15,7 +15,7 @@ const SocialMedia= ({ onLinkClick, className, socialMediaLinks }: SocialMediaPro
           </li>
         ))}
       </ul>
-    </nav>
+    </div>
   );
 }
 
