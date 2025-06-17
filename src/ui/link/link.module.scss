@@ -8,11 +8,20 @@
   line-height: 100%;
   text-transform: uppercase;
 
-  padding: 10px;
+  padding: 22px;
   margin: 0;
   border-radius: 30px;
 
   width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include vp-1023 {
+    font-size: 12px;
+    padding: 18px;
+  }
 }
 
 .white {
@@ -20,11 +29,11 @@
   border: 1px solid $color-default-black;
   background-color: transparent;
 
-  transition: color $trans-default border $trans-default;
+  transition: border-color $trans-default, color $trans-default;
 
   @include hover-focus {
     color: $color-java;
-    border: 1px solid $color-java;
+    border-color: $color-java;
   }
 }
 
@@ -33,10 +42,10 @@
   border: 1px solid $color-java;
   background-color: $color-java;
 
-  transition: background-color $trans-default border-color $trans-default;
+  transition: background-color $trans-default, border-color $trans-default;
 
   @include hover-focus {
     background-color: $color-default-black;
-    border: 1px solid $color-default-black;
+    border-color: $color-default-black;
   }
 }

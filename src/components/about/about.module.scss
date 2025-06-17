@@ -1,0 +1,159 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.root {
+  padding: 0 0 50px 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include vp-1023 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.title {
+  grid-column: span 2;
+  letter-spacing: 3.2px;
+  margin-bottom: 37px;
+
+  @include vp-1023 {
+    margin-bottom: 26px;
+    letter-spacing: 2.5px;
+  }
+}
+
+.motto {
+  font-family: $ff-neutral-face;
+  font-size: 96px;
+  line-height: 103%;
+  color: $color-default-black;
+
+  grid-column: span 2;
+  margin-bottom: 60px;
+
+  @media (max-width: 1320px) {
+    font-size: 81px;
+  }
+
+  @include vp-1023 {
+    font-size: 28px;
+    letter-spacing: 1.7px;
+    margin-bottom: 16px;
+  }
+
+  @include vp-374 {
+    font-size: 23px;
+  }
+}
+
+.text {
+  max-width: 523px;
+  width: 100%;
+  padding: 0 30px 0 0;
+  margin: 0 0 30px 0;
+
+  p {
+    font-family: $ff-commissioner;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-zambezi;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  @include vp-1023 {
+    max-width: 100%;
+    margin: 0 0 27px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+.reasons {
+  margin: 7px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-self: flex-end;
+  align-items: flex-start;
+  justify-content: space-between;
+  row-gap: 83px;
+
+  width: 100%;
+  max-width: 549px;
+
+  @include vp-1023 {
+    margin: 0 0 17px;
+    row-gap: 31px;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 13px;
+
+  width: fit-content;
+
+  @include vp-1023 {
+    gap: 8px;
+  }
+
+  span:first-child {
+    font-family: $ff-neutral-face;
+    font-size: 64px;
+    line-height: 100%;
+    color: $color-default-black;
+    margin: 0;
+
+    @include vp-1023 {
+      font-size: 38px;
+    }
+  }
+
+  span:last-child {
+    font-family: $ff-commissioner;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-default-black;
+    margin: 0;
+
+    @include vp-1023 {
+      font-size: 14px;
+    }
+  }
+
+  &:nth-child(2n) {
+    padding: 0 0 0 26px;
+
+    @include vp-1023 {
+      padding: 0 0 0 7px;
+    }
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 554px;
+
+  @include vp-1023 {
+    max-width: 100%;
+    flex-direction: column;
+    gap: 9px;
+  }
+}
