@@ -1,10 +1,11 @@
 import { FC } from 'react';
 import { Container } from '@ui/container/container';
+import Hero from '@components/hero/hero';
 
 const Home: FC = () => {
   return (
     <Container>
-      <h1>Продажа и аренда новостроек в Дубаи</h1>
+      <Hero />
     </Container>
   )
 }
