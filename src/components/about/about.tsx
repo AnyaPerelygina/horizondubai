@@ -35,7 +35,7 @@ const About = () => {
         </ul>
         <div className={styles.links}>
           <Link text={'Больше о компании'} href={'#'} />
-          <Link text={'Видео о нас'} href={'#'} color={'blue'} />
+          <Link text={'Видео о нас'} href={'https://youtu.be/anmELORT8Zk?si=bFb7mlBn-1R3lw2I'} color={'blue'} />
         </div>
       </Container>
     </div>
