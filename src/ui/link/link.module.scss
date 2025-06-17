@@ -1,0 +1,42 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.root {
+  font-family: $ff-neutral-face;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+
+  padding: 10px;
+  margin: 0;
+  border-radius: 30px;
+
+  width: 100%;
+}
+
+.white {
+  color: $color-default-black;
+  border: 1px solid $color-default-black;
+  background-color: transparent;
+
+  transition: color $trans-default border $trans-default;
+
+  @include hover-focus {
+    color: $color-java;
+    border: 1px solid $color-java;
+  }
+}
+
+.blue {
+  color: $color-default-white;
+  border: 1px solid $color-java;
+  background-color: $color-java;
+
+  transition: background-color $trans-default border-color $trans-default;
+
+  @include hover-focus {
+    background-color: $color-default-black;
+    border: 1px solid $color-default-black;
+  }
+}
