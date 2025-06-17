@@ -1,5 +1,5 @@
 import Logo from '@ui/logo/logo';
-import { Container } from '@ui/container/container';
+import Container from '@ui/container/container';
 import Nav from '@components/nav/nav';
 import SocialMedia from '@components/social-media/social-media';
 
