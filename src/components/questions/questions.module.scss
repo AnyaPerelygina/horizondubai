@@ -1,0 +1,103 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.root {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.container {
+  padding: 110px 60px 91px;
+}
+
+.background {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+
+  z-index: -1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.motto {
+  font-family: $ff-neutral-face;
+  font-size: 64px;
+  line-height: 110%;
+  color: $color-default-white;
+
+  max-width: 730px;
+  width: 100%;
+  margin: 0 0 84px;
+}
+
+.text {
+  background-color: $color-default-white;
+  border-radius: 45px;
+  padding: 71px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  p {
+    font-family: $ff-neutral-face;
+    font-size: 34px;
+    line-height: 110%;
+    text-align: center;
+    color: $color-default-black;
+
+    margin: 0;
+  }
+}
+
+.phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  svg {
+    width: 68px;
+    height: 68px;
+    color: $color-java;
+
+    transition: color $trans-default;
+  }
+
+  span {
+    font-family: $ff-neutral-face;
+    font-size: 48px;
+    line-height: 150%;
+    color: $color-java;
+
+    margin: 0;
+
+    transition: color $trans-default;
+  }
+
+  @include hover-focus {
+    svg, span {
+      color: $color-default-black;
+    }
+  }
+}

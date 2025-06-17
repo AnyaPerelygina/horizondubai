@@ -16,7 +16,7 @@
         "@pages/*": ["pages/*"],
         "@app/*": ["app/*"],
         "@assets/*": ["assets/*"],
-        "@ui/*": ["ui/*"]
+        "@ui/*": ["ui/*"],
       }
     },
     "include": ["src", "src/types"]

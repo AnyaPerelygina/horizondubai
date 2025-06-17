@@ -30,8 +30,11 @@
   padding: 30px 0;
   grid-column: span 2;
 
-  border-top: 1px solid $color-default-black;
   border-bottom: 1px solid $color-default-black;
+
+  @include vp-1023 {
+    border-top: 1px solid $color-default-black;
+  }
 
   p {
     margin: 0;
