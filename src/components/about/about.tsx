@@ -6,7 +6,7 @@ import Link from '@ui/link/link';
 
 const About = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <Container className={styles.container}>
         <Title text={'О компании'} level={2} variant={'sm'} className={styles.title} />
         <div className={styles.motto}>
@@ -38,7 +38,7 @@ const About = () => {
           <Link text={'Видео о нас'} href={'https://youtu.be/anmELORT8Zk?si=bFb7mlBn-1R3lw2I'} color={'blue'} />
         </div>
       </Container>
-    </div>
+    </section>
   )
 }
 

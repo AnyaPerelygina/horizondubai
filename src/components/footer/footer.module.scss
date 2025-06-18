@@ -2,10 +2,10 @@
 @use '../../styles/mixins.scss' as *;
 
 .root {
-  padding: 20px 0;
+  padding: 0 0 20px;
 
   @include vp-1023 {
-    padding: 20px 0 30px;
+    padding: 0 0 30px;
   }
 }
 
@@ -18,7 +18,7 @@
   padding: 0;
 
   @include vp-1023 {
-    row-gap: 20px;
+    row-gap: 34px;
   }
 }
 
@@ -33,7 +33,9 @@
   border-bottom: 1px solid $color-default-black;
 
   @include vp-1023 {
+    padding: 20px 0 26px;
     border-top: 1px solid $color-default-black;
+    line-height: 140%;
   }
 
   p {

@@ -3,11 +3,11 @@ import styles from './hero.module.scss';
 
 const Hero = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <Container className={styles.container}>
         <h1>Продажа и аренда новостроек в Дубаи</h1>
       </Container>
-    </div>
+    </section>
   )
 }
 

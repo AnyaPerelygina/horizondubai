@@ -54,7 +54,7 @@ const Header = () => {
       label: 'телеграм'
     },
     {
-      href: '#',
+      href: 'tel:+72322322323',
       Icon: PhoneSvg,
       label: 'телефон',
       className: 'customLink'
