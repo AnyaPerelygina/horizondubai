@@ -5,7 +5,7 @@ import styles from './subscription.module.scss';
 
 import BackgroundBildingsWebp from '@assets/images/background/background-bildings.webp';
 import BackgroundBildingsMobileWebp from '@assets/images/background/background-bildings-mobile.webp';
-import BackgroundBildingsPng from '@assets/images/background/background-bildings.png';
+import BackgroundBildingsMobilePng from '@assets/images/background/background-bildings-mobile.png';
 
 const SubscriptionForm = () => {
   const [email, setEmail] = useState('');
@@ -60,7 +60,7 @@ const SubscriptionForm = () => {
           <picture>
             <source type="image/webp" media="(max-width: 767px)" srcSet={BackgroundBildingsMobileWebp}></source>
             <source type="image/webp" media="(min-width: 768px)" srcSet={BackgroundBildingsWebp}></source>
-            <img src={BackgroundBildingsPng} alt='Изображение высоких зданий.' />
+            <img src={BackgroundBildingsMobilePng} alt='Изображение высоких зданий.' />
           </picture>
         </div>
         <div className={styles.motto}>
