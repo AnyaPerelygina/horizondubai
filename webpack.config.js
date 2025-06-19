@@ -21,6 +21,7 @@ module.exports = (env, argv) => {
         '@pages': path.resolve(__dirname, 'src/pages'),
         '@assets': path.resolve(__dirname, 'src/assets'),
         '@ui': path.resolve(__dirname, 'src/ui'),
+        '@data': path.resolve(__dirname, 'src/data'),
       },
     },
     module: {

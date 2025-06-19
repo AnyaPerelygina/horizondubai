@@ -24,4 +24,8 @@
   font-weight: 400;
   line-height: 100%;
   color: $color-default-black;
+
+  @include vp-1023 {
+    font-size: 40px;
+  }
 }

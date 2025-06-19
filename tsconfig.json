@@ -17,6 +17,7 @@
         "@app/*": ["app/*"],
         "@assets/*": ["assets/*"],
         "@ui/*": ["ui/*"],
+        "@data/*": ["data/*"]
       }
     },
     "include": ["src", "src/types"]
