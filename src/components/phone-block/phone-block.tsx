@@ -1,10 +1,10 @@
 import Container from '@ui/container/container';
-import styles from './questions.module.scss';
+import styles from './phone-block.module.scss';
 
 import PhoneSvg from '@assets/phone.svg';
 import BackgroundBeach from '@assets/images/background/background-beach.webp';
 
-const Questions = () => {
+const Phone = () => {
   return (
     <section className={styles.root}>
       <div className={styles.background}>
@@ -26,4 +26,4 @@ const Questions = () => {
   )
 }
 
-export default Questions;
+export default Phone;

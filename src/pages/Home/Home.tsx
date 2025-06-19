@@ -1,9 +1,9 @@
 import { FC } from 'react';
 
 import Hero from '@components/hero/hero';
-import About from '@components/about/about';
-import Questions from '@components/questions/questions';
 import SubscriptionForm from '@components/form/subscription/subscription';
+import About from '@components/about/about';
+import PhoneBlock from '@components/phone-block/phone-block';
 
 const Home: FC = () => {
   return (
@@ -11,7 +11,7 @@ const Home: FC = () => {
       <Hero />
       <SubscriptionForm />
       <About />
-      <Questions />
+      <PhoneBlock />
     </>
   )
 }
