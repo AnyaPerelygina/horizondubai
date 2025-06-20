@@ -1,6 +1,7 @@
 import { FC } from 'react';
 
 import Hero from '@components/hero/hero';
+import BlockToCatalog from '@components/block-to-catalog/block-to-catalog';
 import News from '@components/news/news';
 import Articles from '@components/articles/articles';
 import Questions from '@components/questions/questions';
@@ -12,6 +13,7 @@ const Home: FC = () => {
   return (
     <>
       <Hero />
+      <BlockToCatalog />
       <News />
       <Articles />
       <Questions />

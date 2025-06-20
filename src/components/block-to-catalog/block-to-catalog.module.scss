@@ -1,0 +1,132 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.root {
+  padding: 0 0 171px;
+
+  @include vp-1023 {
+    padding: 0 0 59px;
+  }
+}
+
+.container {
+  position: relative;
+  min-height: 509px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include vp-1023 {
+    min-height: 286px;
+  }
+}
+
+.background {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 60px;
+  bottom: 0;
+  left: 60px;
+  z-index: -1;
+
+  border-radius: 32px;
+  height: 100%;
+  overflow: hidden;
+
+  img {
+    background-color: $color-zambezi;
+    border-radius: 32px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @include vp-1023 {
+    right: 40px;
+    left: 40px;
+  }
+
+  @include vp-767 {
+    right: 20px;
+    left: 20px;
+  }
+}
+
+.wrapperText {
+  max-width: 670px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+
+  padding: 60px;
+  height: 100%;
+
+  @include vp-1023 {
+    padding: 40px 50px 40px 40px;
+    gap: 12px;
+    max-width: 370px;
+  }
+
+  @include vp-767 {
+    padding: 40px 50px 40px 24px;
+    max-width: 293px;
+  }
+}
+
+.motto {
+  font-family: $ff-neutral-face;
+  font-size: 48px;
+  line-height: 100%;
+  color: $color-default-white;
+  text-align: start;
+
+  @include vp-1023 {
+    font-size: 24px;
+  }
+}
+
+.text {
+  font-family: $ff-commissioner;
+  font-size: 18px;
+  line-height: 150%;
+  color: $color-default-white;
+  text-align: start;
+
+  margin: 0 0 89px;
+
+  p {
+    margin: 0;
+  }
+
+  @include vp-1023 {
+    font-size: 12px;
+    margin: 0 0 6px;
+  }
+}
+
+.link {
+  font-family: $ff-neutral-face;
+  font-size: 18px;
+  line-height: 100%;
+  color: $color-default-black;
+
+  max-width: 300px;
+  padding: 35px 22px;
+  border-radius: 99px;
+  border: none;
+  background-color: $color-default-white;
+
+  @include vp-1023 {
+    font-size: 12px;
+
+    max-width: 100%;
+    border-radius: 45px;
+    padding: 19px 15px;
+  }
+}
