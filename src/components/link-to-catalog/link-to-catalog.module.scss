@@ -1,0 +1,178 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.root {
+  border-top: 1px solid $color-default-black;
+  border-bottom: 1px solid $color-default-black;
+  margin: 100px 0 169px;
+  padding: 121px 0 31px;
+
+  @include vp-1023 {
+    margin: 0 0 29px;
+    padding: 37px 0 21px;
+  }
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (min-width: 1024px) and (max-width: 1380px) {
+    justify-content: space-around;
+  }
+
+  @include vp-1023 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.item {
+  width: 100%;
+  max-width: 400px;
+
+  @include vp-1023 {
+    max-width: 335px;
+  }
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+
+  min-height: 234px;
+  height: 100%;
+  width: 100%;
+
+  @include vp-1023 {
+    min-height: 96px;
+  }
+
+  @include hover-focus {
+    .title {
+      color: $color-java;
+
+      svg {
+        color: $color-java;
+      }
+    }
+
+    .img {
+      @media (min-width: 1024px) {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+      }
+    }
+
+    .count {
+      opacity: 1;
+    }
+  }
+}
+
+.wrapperText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 25px;
+
+  @include vp-1023 {
+    gap: 17px;
+  }
+}
+
+.title {
+  font-family: $ff-neutral-face;
+  font-size: 48px;
+  line-height: 100%;
+  color: $color-default-black;
+  transition: color $tf-default;
+
+  display: flex;
+  flex-direction: column;
+
+  svg {
+    color: $color-default-black;
+    transition: color $tf-default;
+    margin: 0 0 0 15px;
+  }
+
+  @include vp-1023 {
+    font-size: 24px;
+
+    svg {
+      margin: 0 0 0 8px;
+    }
+  }
+}
+
+.count {
+  font-family: $ff-commissioner;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  color: $color-default-black;
+  opacity: 0.3;
+  transition: opacity $tf-default;
+
+  max-width: 150px;
+  width: 100%;
+
+  @include vp-1023 {
+    font-size: 14px;
+    opacity: 0.4;
+  }
+}
+
+.img {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+  width: 100%;
+  max-width: 284px;
+  height: 100%;
+  max-height: 168px;
+  transition: visibility $tf-default, opacity $tf-default, display $tf-default;
+
+  img {
+    min-width: 284px;
+    width: auto;
+    min-height: 168px;
+    height: auto;
+    object-fit: cover;
+    overflow: visible;
+
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: -41px;
+    z-index: -1;
+  }
+
+  @include vp-1023 {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+
+    img {
+      min-width: unset;
+      max-width: 163px;
+      min-height: unset;
+      max-height: 96px;
+
+      top: -7px;
+      right: 0;
+    }
+  }
+}
