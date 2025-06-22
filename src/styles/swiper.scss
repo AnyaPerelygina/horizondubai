@@ -1,0 +1,74 @@
+@use './variables.scss' as *;
+@use './mixins.scss' as *;
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: auto;
+}
+
+.swiperButtons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.swiperPrev,
+.swiperNext {
+  background-color: $color-default-white;
+  border: 1px solid $color-default-black;
+  transition: border $trans-default;
+  border-radius: 50%;
+
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+
+  svg {
+    color: $color-default-black;
+    transition: color $trans-default;
+  }
+
+  @include hover-focus {
+    border: 1px solid $color-java;
+
+    svg {
+      color: $color-java;
+    }
+  }
+
+  @include vp-1023 {
+    width: 40px;
+    height: 40px;
+    padding: 5px 3px 7px 5px;
+  }
+}
+
+.swiperPrev {
+  svg {
+    transform: rotate(180deg);
+  }
+
+  @include vp-1023 {
+    padding: 5px 5px 7px 3px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 5px;
+  margin: 0;
+  background-color: $color-default-white;
+  opacity: 0.5;
+  border-radius: 20px;
+  transition: opacity $trans-default;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 32px;
+}
