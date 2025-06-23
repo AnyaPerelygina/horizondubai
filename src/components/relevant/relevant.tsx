@@ -8,6 +8,7 @@ import Title from '@ui/title/title';
 import Link from '@ui/link/link';
 
 import Arrow from '@assets/arrow-small.svg';
+import ArrowRight from '@assets/arrow-right.svg';
 import Bed from '@assets/bed.svg';
 import Square from '@assets/square.svg';
 
@@ -30,9 +31,9 @@ const Relevant = () => {
   }, []);
 
   return (
-    <section>
+    <section className={styles.root}>
       <Container className={styles.container}>
-        <Title text={'Актуально'} level={2} variant={'bg'} />
+        <Title text={'Актуально'} level={2} variant={'bg'} className={styles.title} />
         {isDesktop && (
           <>
             <div className={styles.swiperButtons}>
@@ -79,6 +80,9 @@ const Relevant = () => {
                       <img src={imgPng} alt='Изображение территории ЖК.' />
                     </picture>
                   </div>
+                  <div className={styles.arrow}>
+                    <ArrowRight />
+                  </div>
                   <div className={styles.description}>
                     <span className={styles.type}>{type}</span>
                     <span className={styles.nameDeveloper}>{nameDeveloper}</span>
@@ -88,7 +92,7 @@ const Relevant = () => {
                     </span>
                     <span className={styles.square}>
                       <Square />
-                      {square}&nbsp;кв.м.
+                      {square}&nbsp;м&sup2;
                     </span>
                     <span className={styles.price}>от&nbsp;{price}&nbsp;$</span>
                   </div>
@@ -102,7 +106,7 @@ const Relevant = () => {
         {!isDesktop && (
           <>
             <ul className={styles.list}>
-              {mockApartments.map(({ imgWebp, imgWebpMobile, imgPng, link, type, nameDeveloper, beds, square, price }, index) =>
+              {mockApartments.slice(0, 4).map(({ imgWebp, imgWebpMobile, imgPng, link, type, nameDeveloper, beds, square, price }, index) =>
                 <li className={styles.item} key={index}>
                   <a href={link} className={styles.card} target={'_blank'}>
                     <div className={styles.img}>
@@ -111,6 +115,9 @@ const Relevant = () => {
                         <source type="image/webp" media="(min-width: 768px)" srcSet={imgWebp} />
                         <img src={imgPng} alt='Изображение территории ЖК.' />
                       </picture>
+                    </div>
+                    <div className={styles.arrow}>
+                      <ArrowRight />
                     </div>
                     <div className={styles.description}>
                       <span className={styles.type}>{type}</span>
