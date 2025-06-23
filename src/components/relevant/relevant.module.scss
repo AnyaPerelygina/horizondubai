@@ -1,0 +1,42 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/mixins.scss' as *;
+@use '../../styles/swiper.scss' as *;
+
+.root {
+  padding: 0 0 171px;
+  display: flex;
+
+  @include vp-1023 {
+    padding: 61px 0;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  div:last-child {
+    grid-column: span 2;
+    width: 100%;
+  }
+
+  @include vp-767 {
+    padding: 0 0 0 20px;
+  }
+}
+
+.title {
+  margin: 0 0 62px;
+
+  @include vp-767 {
+    margin: 0 0 25px;
+  }
+}
+
+.swiperButtons {
+  margin: 0 0 0 auto;
+
+  @include vp-767 {
+    display: none;
+  }
+}

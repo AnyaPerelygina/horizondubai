@@ -2,6 +2,7 @@ import { FC } from 'react';
 
 import Hero from '@components/hero/hero';
 import BlockToCatalog from '@components/block-to-catalog/block-to-catalog';
+import Relevant from '@components/relevant/relevant';
 import LinkToCatalog from '@components/link-to-catalog/link-to-catalog';
 import Districts from '@components/districts/districts';
 import Developers from '@components/developers/developers';
@@ -17,6 +18,7 @@ const Home: FC = () => {
     <>
       <Hero />
       <BlockToCatalog />
+      <Relevant />
       <LinkToCatalog />
       <Districts />
       <Developers />

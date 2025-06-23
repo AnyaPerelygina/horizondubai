@@ -93,10 +93,6 @@ const Districts = () => {
             swiper.params.navigation.prevEl = prevRef.current;
             // @ts-ignore
             swiper.params.navigation.nextEl = nextRef.current;
-          }}
-          pagination={{
-            clickable: true,
-            el: `.${styles.pagination}`
           }}>
           {sliders.map(({ developerName, price, count, img, link }, index) =>
             <SwiperSlide key={index}>
