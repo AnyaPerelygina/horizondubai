@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, EffectFade } from 'swiper/modules';
 
 import Title from '@ui/title/title';
 import Link from '@ui/link/link';

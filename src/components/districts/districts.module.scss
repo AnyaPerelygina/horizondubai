@@ -1,0 +1,257 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/mixins.scss' as *;
+@use '../../styles/swiper.scss' as *;
+
+.root {
+  padding: 0 0 171px;
+  display: flex;
+
+  @include vp-1023 {
+    padding: 61px 0;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  div:last-child {
+    grid-column: span 2;
+    width: 100%;
+
+    @include vp-767 {
+      overflow: visible;
+
+      .swiper-slide {
+        max-width: 335px;
+      }
+    }
+  }
+
+  @include vp-767 {
+    padding: 0 0 0 20px;
+  }
+}
+
+.title {
+  margin: 0 0 62px;
+
+  @include vp-767 {
+    margin: 0 0 25px;
+  }
+}
+
+.swiperButtons {
+  margin: 0 0 0 auto;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.wrapper {
+  max-width: 434px;
+  height: 100%;
+  min-height: 649px;
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 43.91%);
+    border-radius: 45px;
+    opacity: 0.5;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1235px) {
+    min-height: 550px;
+  }
+
+  @include vp-1023 {
+    max-width: 100%;
+    min-height: 426px;
+  }
+
+  @include vp-767 {
+    max-width: 335px;
+
+    &::after {
+      border-radius: 32px;
+    }
+  }
+}
+
+.description {
+  position: relative;
+  height: fit-content;
+  max-width: 320px;
+  width: 100%;
+  min-height: 180px;
+  padding: 56px 33px 20px 36px;
+
+  background-color: $color-java;
+  color: $color-default-white;
+  border-radius: 45px 0 50px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 13px;
+
+  @media (min-width: 1024px) and (max-width: 1235px) {
+    padding: 56px 10px 20px 36px;
+    width: 85%;
+  }
+
+  @include vp-1023 {
+    max-width: 290px;
+    min-height: 150px;
+  }
+
+  @include vp-767 {
+    max-width: 215px;
+    min-height: 130px;
+    border-radius: 32px 0 50px 0;
+    padding: 33px 23px 20px 23px;
+
+    row-gap: 8px;
+  }
+}
+
+.img {
+  max-width: 434px;
+  border-radius: 45px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 45px;
+    background-color: $color-zambezi;
+  }
+
+  @include vp-1023 {
+    max-width: 100%;
+  }
+
+  @include vp-767 {
+    border-radius: 32px;
+
+    img {
+      border-radius: 32px;
+    }
+  }
+}
+
+.developerName {
+  font-family: $ff-neutral-face;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 100%;
+  text-align: start;
+
+  @media (min-width: 1024px) and (max-width: 1235px) {
+    font-size: 28px;
+  }
+
+  @include vp-1023 {
+    font-size: 20px;
+  }
+}
+
+.info {
+  font-family: $ff-commissioner;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: start;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media (min-width: 1024px) and (max-width: 1235px) {
+    font-size: 12px;
+  }
+
+  @include vp-1023 {
+    font-size: 10px;
+  }
+}
+
+.dot {
+  position: relative;
+  width: 4px;
+  height: 4px;
+  padding: 0 14px 0 10px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: $color-default-white;
+    border-radius: 50%;
+  }
+}
+
+.link {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+
+  background-color: $color-default-white;
+  border-radius: 50%;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    color: $color-default-black;
+    transition: color $trans-default;
+  }
+
+  @include hover-focus {
+    svg {
+      color: $color-java;
+    }
+  }
+
+  @include vp-767 {
+    bottom: 24px;
+    left: 24px;
+  }
+}
+
+.root :global(.swiper-slide) {
+  @include vp-767 {
+    max-width: 335px;
+  }
+
+  @include vp-374 {
+    max-width: 280px;
+  }
+}
