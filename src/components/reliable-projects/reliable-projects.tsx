@@ -66,7 +66,7 @@ const ReliableProjects = () => {
             modules={[Navigation]}
             breakpoints={{
               320: {
-                slidesPerView: 1.3,
+                slidesPerView: 'auto',
                 spaceBetween: 10,
                 allowTouchMove: true,
               },

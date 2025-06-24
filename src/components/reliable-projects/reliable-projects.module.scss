@@ -7,13 +7,18 @@
   display: flex;
 
   @include vp-1023 {
-    padding: 61px 0;
+    padding: 0 0 61px;
   }
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(2, auto);
+
+  @include vp-767 {
+    overflow: visible;
+    padding: 0;
+  }
 }
 
 .title {
@@ -21,6 +26,7 @@
 
   @include vp-767 {
     margin: 0 0 25px;
+    padding: 0 20px;
   }
 }
 
@@ -46,6 +52,15 @@
   max-width: 748px;
   width: 100%;
   margin: 0 0 40px;
+
+  @include vp-767 {
+    margin: 0 0 20px;
+    padding: 0 20px;
+
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 .tabButton {
@@ -62,6 +77,15 @@
 
   padding: 16px 35px;
   width: 100%;
+
+  @include vp-1023 {
+    font-size: 14px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    padding: 12px 27px 14px;
+  }
 }
 
 .activeTab {
@@ -84,11 +108,37 @@
   height: 100%;
   min-height: 649px;
   padding: 40px;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
+
+  @include hover-focus {
+    .arrow {
+      visibility: visible;
+      opacity: 1;
+
+      svg {
+        color: $color-java;
+      }
+    }
+
+    .type {
+      color: $color-java;
+    }
+
+    .nameDeveloper {
+      color: $color-java;
+    }
+
+    .price {
+      @include vp-767 {
+        color: $color-java;
+      }
+    }
+  }
 
   &::after {
     position: absolute;
@@ -100,6 +150,15 @@
     background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 43.91%);
     opacity: 0.5;
     z-index: -1;
+  }
+
+  @include vp-1023 {
+    min-height: 362px;
+    border-radius: 32px;
+  }
+
+  @include vp-767 {
+    padding: 10px 40px 24px 24px;
   }
 }
 
@@ -113,6 +172,7 @@
 
   img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
     background-color: $color-java;
   }
@@ -126,6 +186,16 @@
 
   transform: rotate(-270deg);
 
+  @include vp-1023 {
+    top: 61px;
+    left: 8px;
+  }
+
+  @include vp-767 {
+    top: 52px;
+    left: 1px;
+  }
+
   span {
     font-family: $ff-commissioner;
     font-size: 12px;
@@ -135,6 +205,10 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: start;
+
+    @include vp-1023 {
+      font-size: 8px;
+    }
   }
 
   svg {
@@ -146,6 +220,49 @@
     left: 61px;
     transform: rotate(270deg);
     z-index: -1;
+
+    @include vp-767 {
+      top: -84px;
+      left: 8px;
+    }
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  background-color: $color-default-white;
+  border-radius: 50%;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: visibility $trans-default, opacity $trans-default;
+
+  svg {
+    color: $color-default-black;
+  }
+
+  @include vp-1023 {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  @include vp-767 {
+    top: 11px;
+    right: 14px;
+
+    height: 40px;
+    width: 40px;
   }
 }
 
@@ -153,6 +270,10 @@
   display: grid;
   grid-template-columns: auto auto;
   gap: 20px;
+
+  @include vp-767 {
+    gap: 12px;
+  }
 }
 
 .type {
@@ -166,6 +287,10 @@
   opacity: 0.8;
   text-align: start;
   text-transform: uppercase;
+
+  @include vp-1023 {
+    font-size: 8px;
+  }
 }
 
 .nameDeveloper {
@@ -181,6 +306,10 @@
   @media (min-width: 1024px) and (max-width: 1235px) {
     font-size: 30px;
   }
+
+  @include vp-1023 {
+    font-size: 20px;
+  }
 }
 
 .price {
@@ -190,9 +319,29 @@
   line-height: 100%;
   color: $color-default-white;
   text-align: start;
+
+  @include vp-1023 {
+    font-size: 10px;
+  }
 }
 
 .root :global(.swiper-slide) {
   max-width: 434px;
   width: 100%;
+
+  @include vp-1023 {
+    max-width: 100%;
+  }
+
+  @include vp-767 {
+    max-width: 249px;
+  }
+}
+
+
+.root :global(.swiper) {
+  @include vp-767 {
+    overflow: visible;
+    padding: 0 20px;
+  }
 }
