@@ -12,6 +12,7 @@ import 'swiper/scss/navigation';
 
 import Arrow from '@assets/arrow-small.svg';
 import ArrowRight from '@assets/arrow-right.svg';
+import Stamp from '@assets/stamp.svg';
 
 import mockApartments from '@data/apartments';
 
@@ -38,6 +39,7 @@ const ReliableProjects = () => {
     <section className={styles.root}>
       <Container className={styles.container}>
         <Title text={'Надежные проекты'} level={2} variant={'bg'} className={styles.title} />
+
         <div className={styles.swiperButtons}>
           <button ref={prevRef} className={styles.swiperPrev}>
             <Arrow />
@@ -46,26 +48,26 @@ const ReliableProjects = () => {
             <Arrow />
           </button>
         </div>
+
         <div className={styles.tabs}>
-          <div className={styles.buttons}>
-            {tabs.map(({ label, value }) => (
-              <button
-                key={value}
-                className={activeTab === value ? styles.activeTab : ''}
-                onClick={() => setActiveTab(value)}
-              >
-                {label}
-              </button>
-            ))}
-          </div>
+          {tabs.map(({ label, value }) => (
+            <button
+              key={value}
+              className={`${styles.tabButton} ${activeTab === value ? styles.activeTab : ''}`}
+              onClick={() => setActiveTab(value)}
+            >
+              {label}
+            </button>
+          ))}
         </div>
+
         <div className={styles.content}>
           <Swiper
             modules={[Navigation]}
             breakpoints={{
               320: {
                 slidesPerView: 1.3,
-                spaceBetween: 20,
+                spaceBetween: 10,
                 allowTouchMove: true,
               },
               768: {
@@ -91,7 +93,7 @@ const ReliableProjects = () => {
               // @ts-ignore
               swiper.params.navigation.nextEl = nextRef.current;
             }}>
-              {filteredProjects.filter((item) => item.reliable).map(({imgWebp, link, type, nameDeveloper, price }, index) =>
+              {filteredProjects.filter((item) => item.reliable).map(({imgWebp, link, type, nameDeveloper, price, comment }, index) =>
                 <SwiperSlide key={index}>
                   <a href={link} className={styles.card} target={'_blank'}>
                     <div className={styles.img}>
@@ -99,6 +101,10 @@ const ReliableProjects = () => {
                     </div>
                     <div className={styles.arrow}>
                       <ArrowRight />
+                    </div>
+                    <div className={styles.comment}>
+                      <span>{comment}</span>
+                      <Stamp />
                     </div>
                     <div className={styles.description}>
                       <span className={styles.type}>{type}</span>

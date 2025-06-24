@@ -36,6 +36,37 @@
 
 .tabs {
   grid-column: span 2;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+
+  max-width: 748px;
+  width: 100%;
+  margin: 0 0 40px;
+}
+
+.tabButton {
+  background-color: transparent;
+  border: 1px solid $color-default-black;
+  border-radius: 45px;
+
+  font-family: $ff-commissioner;
+  font-size: 16px;
+  line-height: 100%;
+  color: $color-default-black;
+  text-align: center;
+  text-transform: capitalize;
+
+  padding: 16px 35px;
+  width: 100%;
+}
+
+.activeTab {
+  background-color: $color-default-black;
+  color: $color-default-white;
 }
 
 .content {
@@ -45,6 +76,121 @@
   width: 100%;
 }
 
+.card {
+  border-radius: 45px;
+  overflow: hidden;
+  position: relative;
+
+  height: 100%;
+  min-height: 649px;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 43.91%);
+    opacity: 0.5;
+    z-index: -1;
+  }
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    background-color: $color-java;
+  }
+}
+
+.comment {
+  position: absolute;
+  content: "";
+  top: 81px;
+  left: -9px;
+
+  transform: rotate(-270deg);
+
+  span {
+    font-family: $ff-commissioner;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 100%;
+    color: $color-default-white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: start;
+  }
+
+  svg {
+    position: absolute;
+    content: "";
+    top: -86px;
+    right: 0;
+    bottom: 0;
+    left: 61px;
+    transform: rotate(270deg);
+    z-index: -1;
+  }
+}
+
+.description {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.type {
+  grid-column: span 2;
+
+  font-family: $ff-commissioner;
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  color: $color-default-white;
+  opacity: 0.8;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.nameDeveloper {
+  grid-column: span 2;
+
+  font-family: $ff-neutral-face;
+  font-size: 34px;
+  line-height: 100%;
+  color: $color-default-white;
+  text-align: start;
+  text-transform: uppercase;
+
+  @media (min-width: 1024px) and (max-width: 1235px) {
+    font-size: 30px;
+  }
+}
+
+.price {
+  font-family: $ff-commissioner;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  color: $color-default-white;
+  text-align: start;
+}
 
 .root :global(.swiper-slide) {
   max-width: 434px;

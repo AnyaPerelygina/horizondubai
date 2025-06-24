@@ -88,6 +88,7 @@ const mockApartments = [
     type: 'апартаменты',
     beds: 2,
     square: '998',
+    comment: 'сдача в 2027 году',
     relevant: false,
     reliable: true
   },
@@ -99,6 +100,31 @@ const mockApartments = [
     type: 'апартаменты',
     beds: 2,
     square: '998',
+    comment: 'открыты продажи',
+    relevant: false,
+    reliable: true
+  },
+  {
+    imgWebp: Photo7,
+    link: '/villa',
+    nameDeveloper: 'The Garden Collection at Dubai',
+    price: '43 240',
+    type: 'виллы',
+    beds: 2,
+    square: '998',
+    comment: 'открыты продажи',
+    relevant: false,
+    reliable: true
+  },
+  {
+    imgWebp: Photo6,
+    link: '/apartment',
+    nameDeveloper: 'Azizi mina palm jumeirah',
+    price: '43 240',
+    type: 'апартаменты',
+    beds: 2,
+    square: '998',
+    comment: 'открыты продажи',
     relevant: false,
     reliable: true
   },
@@ -110,20 +136,10 @@ const mockApartments = [
     type: 'апартаменты',
     beds: 2,
     square: '998',
+    comment: 'открыты продажи',
     relevant: false,
     reliable: true
   },
-  {
-    imgWebp: Photo6,
-    link: '/apartment',
-    nameDeveloper: 'Azizi mina palm jumeirah',
-    price: '43 240',
-    type: 'апартаменты',
-    beds: 2,
-    square: '998',
-    relevant: false,
-    reliable: true
-  }
 ]
 
 export default mockApartments;
