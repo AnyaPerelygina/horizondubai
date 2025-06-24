@@ -21,19 +21,19 @@ import styles from './header.module.scss';
 const Header = () => {
   const navLinks = [
     {
-      href: '/sale',
+      href: '/catalog',
       label: 'Продажа',
     },
     {
-      href: '/rent',
+      href: '/catalog',
       label: 'Аренда',
     },
     {
-      href: '/new-buildings',
+      href: '/catalog',
       label: 'Новостройки',
     },
     {
-      href: '/villas',
+      href: '/catalog',
       label: 'Виллы',
     },
     {
@@ -49,7 +49,7 @@ const Header = () => {
       label: 'вотсап'
     },
     {
-      href: 'web.telegram.org',
+      href: 'https://web.telegram.org',
       Icon: TelegramSvg,
       label: 'телеграм'
     },

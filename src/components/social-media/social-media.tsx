@@ -9,7 +9,7 @@ const SocialMedia= ({ onLinkClick, className, socialMediaLinks }: SocialMediaPro
       <ul className={styles.list}>
         {socialMediaLinks.map(({ href, Icon, label, className: customLink }) => (
           <li key={href} className={styles.item}>
-            <Link onClick={onLinkClick} to={href} className={`${styles.link} ${customLink ? styles[customLink] : ''}`}>
+            <Link onClick={onLinkClick} to={href} className={`${styles.link} ${customLink ? styles[customLink] : ''}`} target='_blank'>
               <Icon aria-label={label} />
             </Link>
           </li>

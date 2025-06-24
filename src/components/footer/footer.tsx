@@ -13,19 +13,19 @@ import YoutubeSvg from '@assets/youtube.svg';
 const Footer = () => {
   const navLinks = [
     {
-      href: '/sale',
+      href: '/catalog',
       label: 'Продажа',
     },
     {
-      href: '/rent',
+      href: '/catalog',
       label: 'Аренда',
     },
     {
-      href: '/new-buildings',
+      href: '/catalog',
       label: 'Новостройки',
     },
     {
-      href: '/villas',
+      href: '/catalog',
       label: 'Виллы',
     },
     {
@@ -44,22 +44,22 @@ const Footer = () => {
 
   const socialMediaLinks = [
     {
-      href: 'vkontakte.ru',
+      href: 'https://vk.com',
       Icon: VkontakteSvg,
       label: 'вконтакте'
     },
     {
-      href: 'instagram.com',
+      href: 'https://instagram.com',
       Icon: InstagramSvg,
       label: 'инстаграм'
     },
     {
-      href: 'tiktok.com',
+      href: 'https://tiktok.com',
       Icon: TiktokSvg,
       label: 'тикток'
     },
     {
-      href: 'youtube.com',
+      href: 'https://youtube.com',
       Icon: YoutubeSvg,
       label: 'ютуб'
     },

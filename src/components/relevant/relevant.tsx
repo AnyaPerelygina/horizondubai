@@ -70,7 +70,7 @@ const Relevant = () => {
                 // @ts-ignore
                 swiper.params.navigation.nextEl = nextRef.current;
               }}>
-            {mockApartments.map(({ imgWebp, imgWebpMobile, imgPng, link, type, nameDeveloper, beds, square, price }, index) =>
+            {mockApartments.filter((item) => item.relevant).map(({ imgWebp, imgWebpMobile, imgPng, link, type, nameDeveloper, beds, square, price }, index) =>
               <SwiperSlide key={index}>
                 <a href={link} className={styles.card} target={'_blank'}>
                   <div className={styles.img}>

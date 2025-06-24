@@ -1,6 +1,7 @@
 import { FC } from 'react';
 
 import Hero from '@components/hero/hero';
+import ReliableProjects from '@components/reliable-projects/reliable-projects';
 import BlockToCatalog from '@components/block-to-catalog/block-to-catalog';
 import Relevant from '@components/relevant/relevant';
 import LinkToCatalog from '@components/link-to-catalog/link-to-catalog';
@@ -17,6 +18,7 @@ const Home: FC = () => {
   return (
     <>
       <Hero />
+      <ReliableProjects />
       <BlockToCatalog />
       <Relevant />
       <LinkToCatalog />

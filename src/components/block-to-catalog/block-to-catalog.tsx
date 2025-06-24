@@ -23,7 +23,7 @@ const BlockToCatalog = () => {
           <div className={styles.text}>
             <p>Больше 10000 предложений апартаментов, квартир и&nbsp;другой недвижимости, которых нет на&nbsp;сайтах!</p>
           </div>
-          <Link text={'открыть каталог'} href={'#'} className={styles.link} />
+          <Link text={'открыть каталог'} href={'/catalog'} className={styles.link} />
         </div>
       </Container>
     </section>

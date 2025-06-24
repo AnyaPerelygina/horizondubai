@@ -16,37 +16,37 @@ const LinkToCatalog = () => {
       title: 'Новостройки',
       count: '350',
       img: Photo1,
-      link: '/catalog#newbildings'
+      link: '/catalog'
     },
     {
       title: 'Квартиры',
       count: '1 240',
       img: Photo6,
-      link: '/catalog#flats'
+      link: '/catalog'
     },
     {
       title: 'Виллы',
       count: '100',
       img: Photo3,
-      link: '/catalog#villas'
+      link: '/catalog'
     },
     {
       title: 'Апартаменты',
       count: '2 700',
       img: Photo2,
-      link: '/catalog#appartments'
+      link: '/catalog'
     },
     {
       title: 'Лофт',
       count: '40',
       img: Photo4,
-      link: '/catalog#lofts'
+      link: '/catalog'
     },
     {
       title: 'Пентхаус',
       count: '80',
       img: Photo5,
-      link: '/catalog#penthaus'
+      link: '/catalog'
     }
   ]
 

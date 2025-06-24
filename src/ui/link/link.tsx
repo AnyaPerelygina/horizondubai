@@ -6,7 +6,7 @@ const Link = ({ text, className, href, color = 'white' }: LinkProps) => {
   const colorClass = styles[classKey] || '';
 
   return (
-    <a className={`${styles.root} ${colorClass} ${className}`} href={href} target='_blank'>
+    <a className={`${styles.root} ${colorClass} ${className}`} href={href} target='_blank' rel='noopener noreferrer'>
       {text}
     </a>
   )

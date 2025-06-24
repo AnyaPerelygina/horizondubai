@@ -8,7 +8,7 @@ import { FavoritesProps } from './favorites.types';
 const Favorites = ({className}: FavoritesProps) => {
   return (
     <div className={`${styles.root} ${className}`}>
-      <Link to={'#'} className={styles.link}>
+      <Link to={'/favorites'} className={styles.link}>
         <FavoritesIcon />
       </Link>
     </div>
