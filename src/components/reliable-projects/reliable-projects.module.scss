@@ -78,6 +78,13 @@
   padding: 16px 35px;
   width: 100%;
 
+  transition: color $trans-default border $trans-default;
+
+  @include hover-focus {
+    border: 1px solid $color-java;
+    color: $color-java;
+  }
+
   @include vp-1023 {
     font-size: 14px;
   }
@@ -91,6 +98,13 @@
 .activeTab {
   background-color: $color-default-black;
   color: $color-default-white;
+
+  transition: background-color $trans-default;
+
+  @include hover-focus {
+    background-color: $color-java;
+    color: $color-default-white;
+  }
 }
 
 .content {
@@ -329,6 +343,9 @@
   max-width: 434px;
   width: 100%;
 
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+
   @include vp-1023 {
     max-width: 100%;
   }
@@ -337,7 +354,6 @@
     max-width: 249px;
   }
 }
-
 
 .root :global(.swiper) {
   @include vp-767 {
