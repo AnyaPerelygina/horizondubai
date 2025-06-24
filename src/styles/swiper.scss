@@ -21,7 +21,8 @@
 .swiperNext {
   background-color: $color-default-white;
   border: 1px solid $color-default-black;
-  transition: border $trans-default;
+  opacity: 1;
+  transition: border $trans-default, opacity $trans-default;
   border-radius: 50%;
 
   width: 50px;
@@ -39,6 +40,11 @@
     svg {
       color: $color-java;
     }
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.3;
   }
 
   @include vp-1023 {

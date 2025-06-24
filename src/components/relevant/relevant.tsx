@@ -136,7 +136,7 @@ const Relevant = () => {
                 </li>
               )}
             </ul>
-            <Link text={'Смотреть все предложения'} href={'#'} color={'blue'} />
+            <Link text={'Смотреть все предложения'} href={'/catalog'} color={'blue'} />
           </>
         )}
       </Container>

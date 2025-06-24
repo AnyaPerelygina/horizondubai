@@ -16,37 +16,37 @@ const LinkToCatalog = () => {
       title: 'Новостройки',
       count: '350',
       img: Photo1,
-      link: '#'
+      link: '/catalog#newbildings'
     },
     {
       title: 'Квартиры',
       count: '1 240',
       img: Photo6,
-      link: '#'
+      link: '/catalog#flats'
     },
     {
       title: 'Виллы',
       count: '100',
       img: Photo3,
-      link: '#'
+      link: '/catalog#villas'
     },
     {
       title: 'Апартаменты',
       count: '2 700',
       img: Photo2,
-      link: '#'
+      link: '/catalog#appartments'
     },
     {
       title: 'Лофт',
       count: '40',
       img: Photo4,
-      link: '#'
+      link: '/catalog#lofts'
     },
     {
       title: 'Пентхаус',
       count: '80',
       img: Photo5,
-      link: '#'
+      link: '/catalog#penthaus'
     }
   ]
 
@@ -54,8 +54,8 @@ const LinkToCatalog = () => {
     <section className={styles.root}>
       <Container>
         <ul className={styles.list}>
-          {infoLink.map(({ link, title, count, img }) =>
-            <li className={styles.item}>
+          {infoLink.map(({ link, title, count, img }, index) =>
+            <li className={styles.item} key={index}>
               <a href={link} target='_blank' className={styles.link}>
                 <div className={styles.wrapperText}>
                   <div className={styles.title}>

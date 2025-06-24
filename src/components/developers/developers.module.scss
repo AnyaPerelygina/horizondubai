@@ -266,3 +266,7 @@
     margin: -148px 0 148px 0;
   }
 }
+
+.root :global(.swiper-slide) {
+  transition: opacity 1.5s ease;
+}

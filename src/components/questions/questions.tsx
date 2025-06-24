@@ -39,8 +39,8 @@ const Questions = () => {
           )}
         </div>
         <ul className={styles.list}>
-          {mockUsersQuestions.map(({ nameUsers, dateUser, question, answers }) => (
-            <li className={styles.item}>
+          {mockUsersQuestions.map(({ nameUsers, dateUser, question, answers }, index) => (
+            <li className={styles.item} key={index}>
               <a className={styles.link} href={'#'}>
                 <div className={styles.infoUsers}>
                   <span className={styles.name}>{nameUsers}</span>
@@ -48,10 +48,10 @@ const Questions = () => {
                   <span className={styles.date}>{dateUser}</span>
                 </div>
                 <span className={styles.question}>{question}</span>
-                <a href={'#'} className={styles.linkAnswers}>
+                <div className={styles.linkAnswers}>
                   <Comments />
                   <span>{`${answers} совета`}</span>
-                </a>
+                </div>
               </a>
             </li>
           ))}

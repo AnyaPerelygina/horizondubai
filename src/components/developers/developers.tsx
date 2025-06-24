@@ -18,14 +18,10 @@ import Developer1Png from '@assets/images/developers/developer-1.png';
 import Arrow from '@assets/arrow-small.svg';
 
 const Developers = () => {
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
-
   const sliders = [
     {
       title: 'Serenia Residences',
       text: 'Serenia Residences — это скрытая жемчужина на острове Пальма Джумейра, предназначенная для избранных. Эта великолепная недвижимость представляет собой частный жилой курорт, предлагающий элитную коллекцию апартаментов с 1, 2 и 3 спальнями, а также пентхаусы, занимающие половину этажа.',
-      img: '',
       link1: '#',
       link2: '#',
       price: '43 200',
@@ -34,7 +30,6 @@ const Developers = () => {
     {
       title: 'Six Senses The Palm',
       text: 'Six Senses The Palm - это захватывающий дух проект класса люкс, расположенный на Palm Jumeirah, одном из самых желанных мест для жизни в Дубае. Новый комплекс Six Senses Hotels Resorts Spas станет первым отелем с фирменными резиденциями в Объединенных Арабских Эмиратах.',
-      img: '',
       link1: '#',
       link2: '#',
       price: '55 100',
@@ -43,7 +38,6 @@ const Developers = () => {
     {
       title: 'Palm Jumeirah',
       text: 'Palm Jumeirah — это скрытая жемчужина на острове Пальма Джумейра, предназначенная для избранных. Эта великолепная недвижимость представляет собой частный жилой курорт, предлагающий элитную коллекцию апартаментов с 1, 2 и 3 спальнями, а также пентхаусы, занимающие половину этажа.',
-      img: '',
       link1: '#',
       link2: '#',
       price: '96 800',
@@ -52,13 +46,15 @@ const Developers = () => {
     {
       title: 'Azizi Mina DAMAS',
       text: 'Azizi Mina — это скрытая жемчужина на острове Пальма Джумейра, предназначенная для избранных. Эта великолепная недвижимость представляет собой частный жилой курорт, предлагающий элитную коллекцию апартаментов с 1, 2 и 3 спальнями, а также пентхаусы, занимающие половину этажа.',
-      img: '',
       link1: '#',
       link2: '#',
       price: '36 700',
       developerName: 'Azizi Mina'
     }
   ]
+
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
 
   return (
     <section className={styles.root}>
@@ -73,17 +69,28 @@ const Developers = () => {
           </button>
         </div>
         <Swiper
-          modules={[ Navigation, Pagination ]}
+          modules={[ Navigation, Pagination, EffectFade ]}
           slidesPerView={1}
           spaceBetween={50}
-          loop
           speed={1500}
+          effect='fade'
+          fadeEffect={{ crossFade: true }}
+          breakpoints={{
+            320: {
+              allowTouchMove: true,
+            },
+            768: {
+              allowTouchMove: false
+            },
+            1024: {
+              allowTouchMove: false
+            }
+          }}
           navigation={{
             prevEl: prevRef.current,
             nextEl: nextRef.current
           }}
           onBeforeInit={(swiper) => {
-            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-ignore
             swiper.params.navigation.prevEl = prevRef.current;
             // @ts-ignore

@@ -28,8 +28,8 @@ const Articles = () => {
         <Title text={'Статьи'} level={2} variant={'bg'} className={styles.title} />
         <Link text={'Все статьи'} href={"#"} className={styles.mainLink} />
         <ul className={styles.list}>
-          {mockArticles.map(({ photo, title, description, timeRead }) => (
-            <li className={styles.item}>
+          {mockArticles.map(({ photo, title, description, timeRead }, index) => (
+            <li className={styles.item} key={index}>
               <a className={styles.link} href={'#'}>
                 <div className={styles.photo}>
                   <img src={photo} alt='Превью статьи.' />

@@ -38,8 +38,8 @@ const News = () => {
           )}
         </div>
         <ul className={styles.list}>
-          {mockUsersNews.map(({ title, dateNews, description }) => (
-            <li className={styles.item}>
+          {mockUsersNews.map(({ title, dateNews, description }, index) => (
+            <li className={styles.item} key={index}>
               <a className={styles.link} href={'#'}>
                 <span className={styles.dateNews}>{dateNews}</span>
                 <span className={styles.subTitle}>{title}</span>

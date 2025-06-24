@@ -44,12 +44,12 @@ const Header = () => {
 
   const socialMediaLinks = [
     {
-      href: '#',
+      href: 'https://web.whatsapp.com',
       Icon: WhatsAppSvg,
       label: 'вотсап'
     },
-        {
-      href: '#',
+    {
+      href: 'web.telegram.org',
       Icon: TelegramSvg,
       label: 'телеграм'
     },

@@ -29,37 +29,37 @@ const Footer = () => {
       label: 'Виллы',
     },
     {
-      href: '',
+      href: '/privacy-polity',
       label: 'Политика конфиденциальности',
     },
     {
-      href: '',
+      href: '/documents',
       label: 'Юридические документы ',
     },
-        {
-      href: '',
+    {
+      href: '/contacts',
       label: 'Контакты',
     },
   ]
 
   const socialMediaLinks = [
     {
-      href: '#',
+      href: 'vkontakte.ru',
       Icon: VkontakteSvg,
       label: 'вконтакте'
     },
-        {
-      href: '#',
+    {
+      href: 'instagram.com',
       Icon: InstagramSvg,
       label: 'инстаграм'
     },
     {
-      href: '#',
+      href: 'tiktok.com',
       Icon: TiktokSvg,
       label: 'тикток'
     },
     {
-      href: '#',
+      href: 'youtube.com',
       Icon: YoutubeSvg,
       label: 'ютуб'
     },
