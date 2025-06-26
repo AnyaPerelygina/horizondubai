@@ -1,8 +1,8 @@
 import Container from '@ui/container/container';
+import FilterForm from '@components/filters/filter-form/filter-form';
 
 import styles from './hero.module.scss';
 
-import Arraw from '@assets/arrow-small.svg';
 import BackgroundArrayMobilePng from '@assets/images/background/background-array-mobile.png';
 import BackgroundArrayMobileWebp from '@assets/images/background/background-array-mobile.webp';
 import BackgroundArrayWebp from '@assets/images/background/background-array.webp';
@@ -25,7 +25,9 @@ const Hero = () => {
             <div className={styles.title2}>
               <span>Новостроек в&nbsp;Дубаи</span>
             </div>
-            <div className={styles.form}></div>
+            <div className={styles.form}>
+              <FilterForm />
+            </div>
           </div>
           <div className={styles.background}>
             <picture>
