@@ -75,7 +75,6 @@ const Header = () => {
     return () => window.removeEventListener('resize', checkIsMobile);
   }, []);
 
-
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add('scroll-lock');

@@ -1,6 +1,7 @@
 export type LinkProps = {
-  text: string;
+  text?: string;
   className?: string;
   href: string;
   color?: 'white' | 'blue';
+  children?: React.ReactNode;
 }

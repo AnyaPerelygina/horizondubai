@@ -155,7 +155,7 @@
   border-radius: 99px;
 
   @include vp-1023 {
-    height: 340px;
-    border-radius: 30px;
+    height: auto;
+    background-color: transparent;
   }
 }
