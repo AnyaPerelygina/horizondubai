@@ -90,6 +90,7 @@ module.exports = (env, argv) => {
       hot: true,
       port: 3000,
       open: true,
+      historyApiFallback: true
     },
     mode: 'development',
   };
