@@ -2,11 +2,287 @@
 @use '../../../styles/mixins.scss' as *;
 
 .root {
+  height: 100%;
+  padding: 0 0 0 20px;
+
   form {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    gap: 0;
+
+    height: 100%;
+
+    @include vp-1023 {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
+}
+
+.customInput,
+.customSelect {
+  font-family: $ff-commissioner;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  color: $color-default-black;
+
+  cursor: pointer;
+
+  width: 100%;
+}
+
+.customSelect {
+  position: relative;
+}
+
+.selectButton {
+  font-family: $ff-commissioner;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: start;
+  color: $color-default-black;
+  transition: color $trans-default;
+
+  cursor: pointer;
+
+  overflow: hidden;
+  border: none;
+  border-right: 1px solid $color-gainsboro;
+  background-color: transparent;
+  width: 100%;
+  max-height: 89px;
+  padding: 34.5px 21px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  @include hover-focus {
+    color: $color-java;
+
+    .arrow {
+      color: $color-java;
+    }
+  }
+}
+
+.arrow {
+  height: 10px;
+  min-width: 10px;
+  color: $color-default-black;
+  transition: transform $trans-default, color $trans-default;
+
+  align-self: center;
+}
+
+.arrowRotated {
+  transform: rotate(180deg);
+}
+
+.customSelectDeals {
+  width: 180px;
+
+  .selectButton {
+    width: 180px;
+  }
+
+  .selectList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1255px) {
+    width: 155px;
+
+    .selectButton {
+      width: 155px;
+    }
+  }
+}
+
+.customSelectProperty {
+  width: 319px;
+
+  .selectButton {
+    width: 319px;
+  }
+
+  .selectList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1255px) {
+    width: 202px;
+
+    .selectButton {
+      width: 202px;
+    }
+  }
+}
+
+.customSelectPrice {
+  width: 100%;
+
+  .selectButton {
+    width: 177px;
+  }
+
+  .selectList {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    width: fit-content;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1255px) {
+    width: 114px;
+
+    .selectButton {
+      width: 114px;
+    }
+
+    .selectList {
+      left: unset;
+      right: 0;
+    }
+  }
+}
+
+.selectList {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 1;
+
+  background-color: $color-default-white;
+  border: 1px solid $color-gainsboro;
+  border-radius: 22px;
+  width: 100%;
+  padding: 20px;
+
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: max-height $trans-default, opacity $trans-default, transform $trans-default;
+  pointer-events: none;
+}
+
+.selectListVisible {
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.selectPrice {
+  position: relative;
+  min-width: 174px;
+  width: 100%;
+  border: 1px solid $color-gainsboro;
+  border-color: $color-gainsboro;
+  transform: border-color $trans-default;
+  border-radius: 45px;
+  padding: 20px;
+
+  display: flex;
+
+  input {
+    justify-self: flex-start;
+    align-self: flex-start;
+
+    border: none;
+    padding: 0;
+    max-width: 125px;
+  }
+
+  svg {
+    position: absolute;
+    content: '';
+    top: 51%;
+    transform: translateY(-50%);
+    right: 16px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.4;
+  }
+
+  @include hover-focus {
+    border-color: $color-java;
+  }
+}
+
+.selectItem {
+  text-align: left;
+  color: $color-default-black;
+  transition: color $trans-default;
+
+  @include hover-focus {
+    color: $color-java;
+  }
+}
+
+.customInput {
+  max-width: 390px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 31px 38px;
+
+  input {
+    border: none;
+    width: 100%;
+    padding: 20px;
+    color: $color-default-black;
+
+    &::placeholder {
+      opacity: 0.4;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1255px) {
+    padding: 31px 0;
+  }
+}
+
+.buttonForm {
+  font-family: $ff-neutral-face;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+
+  border: none;
+  border-radius: 99px;
+  background-color: $color-java;
+  color: $color-default-white;
+  padding: 20px;
+
+  max-width: 268px;
+  width: 100%;
+  height: 100%;
 }

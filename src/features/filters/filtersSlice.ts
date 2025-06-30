@@ -1,16 +1,16 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export interface FiltersState {
-  deal: string;
-  type: string;
+  dealType: string;
+  propertyType: string;
   priceFrom: string;
   priceTo: string;
   location: string;
 }
 
 const initialState: FiltersState = {
-  deal: '',
-  type: '',
+  dealType: '',
+  propertyType: '',
   priceFrom: '',
   priceTo: '',
   location: '',
