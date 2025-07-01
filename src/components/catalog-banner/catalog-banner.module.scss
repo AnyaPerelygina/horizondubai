@@ -1,0 +1,150 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.root {
+  padding: 60px 0;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  min-height: 509px;
+  margin: 107px auto 0;
+
+  @include vp-1023 {
+    min-height: 334px;
+  }
+}
+
+.img {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 60px;
+  bottom: 0;
+  left: 60px;
+  height: 100%;
+  width: auto;
+  max-width: 1340px;
+  z-index: -2;
+
+  margin: 0 auto;
+  border-radius: 45px;
+  overflow: hidden;
+
+  @include vp-1023 {
+    right: 40px;
+    left: 40px;
+  }
+
+  @include vp-767 {
+    right: 20px;
+    left: 20px;
+    border-radius: 32px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 43.91%);
+    opacity: 0.5;
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  height: 100%;
+  min-height: 509px;
+  padding: 60px 60px 76px;
+
+  @include vp-1023 {
+    padding: 40px;
+    min-height: 334px;
+  }
+
+  @include vp-767 {
+    padding: 41px 24px 37px
+  }
+}
+
+.motto {
+  p {
+    font-family: $ff-neutral-face;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 100%;
+    color: $color-default-white;
+    text-align: left;
+
+    margin: 0;
+    max-width: 776px;
+    width: 100%;
+
+    @include vp-1023 {
+      font-size: 24px;
+      max-width: 375px;
+    }
+
+    @include vp-767 {
+      max-width: 261px;
+    }
+  }
+}
+
+.info {
+  max-width: 340px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include vp-1023 {
+    max-width: 186px;
+    gap: 12px;
+  }
+
+  span:first-of-type {
+    font-family: $ff-neutral-face;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 100%;
+    color: $color-default-white;
+    text-align: left;
+
+    @include vp-1023 {
+      font-size: 20px;
+    }
+  }
+
+  span:last-of-type {
+    font-family: $ff-commissioner;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    color: $color-default-white;
+    text-align: left;
+
+    @include vp-1023 {
+      font-size: 10px;
+    }
+  }
+}
