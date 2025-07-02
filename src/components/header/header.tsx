@@ -121,7 +121,7 @@ const Header = () => {
             <SendMarkerSvg />
             <span>Дубай</span>
           </div>
-          <Nav navLinks={navLinks} className={styles.navigation} />
+          <Nav navLinks={navLinks} className={styles.navigation} onLinkClick={() => setIsOpen(false)} />
           <SocialMedia socialMediaLinks={socialMediaLinks} className={styles.socialMedia} />
         </Container>
       ) : (

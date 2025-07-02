@@ -14,7 +14,7 @@ const Logo = ({ className }: LogoProps) => {
       {isHome ? (
         <img src={LogoImg} alt="Logo" width={149} height={52} />
       ) : (
-      <Link to="/home">
+      <Link to="/">
         <img src={LogoImg} alt="Logo" width={149} height={52} />
       </Link>
       )}
