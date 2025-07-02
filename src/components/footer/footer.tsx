@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import Logo from '@ui/logo/logo';
 import Container from '@ui/container/container';
 import Nav from '@components/nav/nav';
@@ -65,6 +67,19 @@ const Footer = () => {
     },
   ]
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useState(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  });
+
   return (
     <footer className={styles.root}>
       <Container className={styles.container}>
@@ -72,8 +87,17 @@ const Footer = () => {
           <p>Horizon Dubai — база данных о&nbsp;недвижимости. Использование сайта означает согласие с&nbsp;Пользовательским соглашением и&nbsp;Политикой конфиденциальности Horizon Dubai. Оплачивая лицензионный платеж, вы&nbsp;принимаете Лицензионное соглашение.</p>
         </div>
         <Nav navLinks={navLinks} className={styles.navigation}/>
-        <Logo className={styles.logo} />
-        <SocialMedia socialMediaLinks={socialMediaLinks} className={styles.socialMedia} />
+        {!isMobile ? (
+          <div className={styles.wrapper}>
+            <Logo className={styles.logo} />
+            <SocialMedia socialMediaLinks={socialMediaLinks} className={styles.socialMedia} />
+          </div>
+        ) : (
+          <>
+            <Logo className={styles.logo} />
+            <SocialMedia socialMediaLinks={socialMediaLinks} className={styles.socialMedia} />
+          </>
+        )}
       </Container>
     </footer>
   );

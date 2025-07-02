@@ -16,6 +16,7 @@
   justify-content: flex-start;
 
   padding: 0;
+  max-width: 100%;
 
   @include vp-1023 {
     row-gap: 34px;
@@ -39,8 +40,9 @@
   }
 
   p {
-    margin: 0;
+    margin: 0 auto;
     padding: 0 60px;
+    max-width: 1460px;
 
     @include vp-1023 {
       font-size: 14px;
@@ -55,8 +57,10 @@
 
 .navigation {
   width: 100%;
+  max-width: 1460px;
   opacity: 0.5;
   padding: 30px 60px;
+  margin: 0 auto;
   grid-column: span 2;
 
   a {
@@ -84,9 +88,21 @@
   }
 }
 
-.logo {
-  margin: 0 0 0 60px;
+.wrapper {
+  grid-column: span 2;
 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  max-width: 1460px;
+  width: 100%;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+
+.logo {
   @include vp-1023 {
     margin: 0 0 0 40px;
     grid-column: span 2;
@@ -100,10 +116,8 @@
 .socialMedia {
   max-width: 248px;
   width: 100%;
-  margin: 0 60px 0 0;
 
   justify-self: flex-end;
-  grid-column: 2;
 
   @include vp-1023 {
     max-width: 196px;
