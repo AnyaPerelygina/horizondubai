@@ -1,0 +1,12 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.root {
+  padding: 60px 0;
+
+  @include vp-1023 {
+    padding: 50px 0 67px;
+    margin: 66px 0 0;
+    position: relative;
+  }
+}

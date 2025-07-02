@@ -1,26 +1,18 @@
-import Photo1 from '@assets/images/relevant/photo-1.webp';
-import Photo1Mobile from '@assets/images/relevant/photo-1-mobile.webp';
-import Photo1Png from '@assets/images/relevant/photo-1.png';
-import Photo2 from '@assets/images/relevant/photo-2.webp';
-import Photo2Mobile from '@assets/images/relevant/photo-2-mobile.webp';
-import Photo2Png from '@assets/images/relevant/photo-2.png';
-import Photo3 from '@assets/images/relevant/photo-3.webp';
-import Photo3Mobile from '@assets/images/relevant/photo-3-mobile.webp';
-import Photo3Png from '@assets/images/relevant/photo-3.png';
-import Photo4 from '@assets/images/relevant/photo-4.webp';
-import Photo4Mobile from '@assets/images/relevant/photo-4-mobile.webp';
-import Photo4Png from '@assets/images/relevant/photo-4.png';
-import Photo5 from '@assets/images/projects/photo-1.webp';
-import Photo6 from '@assets/images/projects/photo-2.webp';
-import Photo7 from '@assets/images/projects/photo-3.webp';
+import Photo1 from '@assets/images/apartments/photo-1.webp';
+import Photo2 from '@assets/images/apartments/photo-2.webp';
+import Photo3 from '@assets/images/apartments/photo-3.webp';
+import Photo4 from '@assets/images/apartments/photo-4.webp';
+import Photo5 from '@assets/images/apartments/photo-5.webp';
+import Photo6 from '@assets/images/apartments/photo-6.webp';
+import Photo7 from '@assets/images/apartments/photo-7.webp';
 
 const mockApartments = [
   {
     imgWebp: Photo1,
-    imgWebpMobile: Photo1Mobile,
-    imgPng: Photo1Png,
     link: '/apartment',
-    nameDeveloper: 'The Sunreise beach ',
+    nameDistrict: 'Damac Hills, Dubai',
+    nameComplex: 'The Sunreise beach ',
+    nameDeveloper: 'DAMAC Properties',
     price: '3 121 187',
     type: 'апартаменты',
     beds: 3,
@@ -30,10 +22,10 @@ const mockApartments = [
   },
   {
     imgWebp: Photo2,
-    imgWebpMobile: Photo2Mobile,
-    imgPng: Photo2Png,
     link: '/apartment',
-    nameDeveloper: 'The June ',
+    nameDistrict: 'Damac Hills, Dubai',
+    nameComplex: 'The June ',
+    nameDeveloper: 'DAMAC Properties',
     price: '2 001 600',
     type: 'апартаменты',
     beds: 3,
@@ -43,10 +35,10 @@ const mockApartments = [
   },
   {
     imgWebp: Photo3,
-    imgWebpMobile: Photo3Mobile,
-    imgPng: Photo3Png,
     link: '/apartment',
-    nameDeveloper: 'The Palm Jumeirah',
+    nameDistrict: 'Damac Hills, Dubai',
+    nameComplex: 'The Palm Jumeirah',
+    nameDeveloper: 'DAMAC Properties',
     price: '3 121 000',
     type: 'апартаменты',
     beds: 2,
@@ -56,10 +48,10 @@ const mockApartments = [
   },
   {
     imgWebp: Photo4,
-    imgWebpMobile: Photo4Mobile,
-    imgPng: Photo4Png,
     link: '/apartment',
-    nameDeveloper: 'Goodness',
+    nameDistrict: 'Damac Hills, Dubai',
+    nameComplex: 'Goodness',
+    nameDeveloper: 'DAMAC Properties',
     price: '1 364 483',
     type: 'апартаменты',
     beds: 5,
@@ -69,10 +61,10 @@ const mockApartments = [
   },
   {
     imgWebp: Photo2,
-    imgWebpMobile: Photo2Mobile,
-    imgPng: Photo2Png,
     link: '/apartment',
-    nameDeveloper: 'Horizon Dubai',
+    nameDistrict: 'Damac Hills, Dubai',
+    nameComplex: 'Horizon Dubai',
+    nameDeveloper: 'DAMAC Properties',
     price: '2 678 279',
     type: 'апартаменты',
     beds: 4,
@@ -83,7 +75,9 @@ const mockApartments = [
   {
     imgWebp: Photo5,
     link: '/apartment',
-    nameDeveloper: 'Adress Jumerald Beach Resort',
+    nameDistrict: 'Damac Hills, Dubai',
+    nameComplex: 'Adress Jumerald Beach Resort',
+    nameDeveloper: 'DAMAC Properties',
     price: '43 240',
     type: 'апартаменты',
     beds: 2,
@@ -95,7 +89,9 @@ const mockApartments = [
   {
     imgWebp: Photo6,
     link: '/apartment',
-    nameDeveloper: 'Azizi mina palm jumeirah',
+    nameDistrict: 'Damac Hills, Dubai',
+    nameComplex: 'Azizi mina palm jumeirah',
+    nameDeveloper: 'DAMAC Properties',
     price: '43 240',
     type: 'апартаменты',
     beds: 2,
@@ -105,9 +101,37 @@ const mockApartments = [
     reliable: true
   },
   {
+    imgWebp: Photo1,
+    link: '/apartment',
+    nameDistrict: 'Damac Hills, Dubai',
+    nameComplex: 'The Sunreise beach ',
+    nameDeveloper: 'DAMAC Properties',
+    price: '3 121 187',
+    type: 'апартаменты',
+    beds: 3,
+    square: '1,433',
+    relevant: true,
+    reliable: false
+  },
+  {
+    imgWebp: Photo4,
+    link: '/apartment',
+    nameDistrict: 'Damac Hills, Dubai',
+    nameComplex: 'Goodness',
+    nameDeveloper: 'DAMAC Properties',
+    price: '1 364 483',
+    type: 'апартаменты',
+    beds: 5,
+    square: '1,987',
+    relevant: true,
+    reliable: false
+  },
+  {
     imgWebp: Photo7,
     link: '/villa',
-    nameDeveloper: 'The Garden Collection at Dubai',
+    nameDistrict: 'Horizon, Dubai',
+    nameComplex: 'The Garden Collection at Dubai',
+    nameDeveloper: 'Arabian Sun Properties',
     price: '43 240',
     type: 'виллы',
     beds: 2,
@@ -119,7 +143,9 @@ const mockApartments = [
   {
     imgWebp: Photo6,
     link: '/apartment',
-    nameDeveloper: 'Azizi mina palm jumeirah',
+    nameDistrict: 'Damac Hills, Dubai',
+    nameComplex: 'Azizi mina palm jumeirah',
+    nameDeveloper: 'DAMAC Properties',
     price: '43 240',
     type: 'апартаменты',
     beds: 2,
@@ -129,9 +155,11 @@ const mockApartments = [
     reliable: true
   },
   {
-    imgWebp: Photo7,
+    imgWebp: Photo3,
     link: '/apartment',
-    nameDeveloper: 'The Garden Collection at Dubai',
+    nameDistrict: 'Damac Hills, Dubai',
+    nameComplex: 'The Garden Collection at Dubai',
+    nameDeveloper: 'DAMAC Properties',
     price: '43 240',
     type: 'апартаменты',
     beds: 2,

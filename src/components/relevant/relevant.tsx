@@ -70,15 +70,11 @@ const Relevant = () => {
                 // @ts-ignore
                 swiper.params.navigation.nextEl = nextRef.current;
               }}>
-            {mockApartments.filter((item) => item.relevant).map(({ imgWebp, imgWebpMobile, imgPng, link, type, nameDeveloper, beds, square, price }, index) =>
+            {mockApartments.filter((item) => item.relevant).map(({ imgWebp, link, type, nameDeveloper, beds, square, price }, index) =>
               <SwiperSlide key={index}>
                 <a href={link} className={styles.card} target={'_blank'}>
                   <div className={styles.img}>
-                     <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcSet={imgWebpMobile} />
-                      <source type="image/webp" media="(min-width: 768px)" srcSet={imgWebp} />
-                      <img src={imgPng} alt='Изображение территории ЖК.' />
-                    </picture>
+                     <img src={imgWebp} alt='Изображение недвижимости.' />
                   </div>
                   <div className={styles.arrow}>
                     <ArrowRight />
@@ -106,15 +102,11 @@ const Relevant = () => {
         {!isDesktop && (
           <>
             <ul className={styles.list}>
-              {mockApartments.slice(0, 4).map(({ imgWebp, imgWebpMobile, imgPng, link, type, nameDeveloper, beds, square, price }, index) =>
+              {mockApartments.slice(0, 4).map(({ imgWebp, link, type, nameDeveloper, beds, square, price }, index) =>
                 <li className={styles.item} key={index}>
-                  <a href={link} className={styles.card} target={'_blank'}>
+                  <a href={link} className={styles.card}>
                     <div className={styles.img}>
-                      <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcSet={imgWebpMobile} />
-                        <source type="image/webp" media="(min-width: 768px)" srcSet={imgWebp} />
-                        <img src={imgPng} alt='Изображение территории ЖК.' />
-                      </picture>
+                      <img src={imgWebp} alt='Изображение недвижимости.' />
                     </div>
                     <div className={styles.arrow}>
                       <ArrowRight />

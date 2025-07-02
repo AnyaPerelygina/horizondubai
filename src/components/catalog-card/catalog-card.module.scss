@@ -1,0 +1,212 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  max-width: 433px;
+  width: 100%;
+  max-height: 560px;
+  height: 100%;
+
+  border: 1px solid #00000033;
+  border-radius: 44px;
+  overflow: hidden;
+
+  @include vp-1023 {
+    max-width: 100%;
+  }
+
+  @include vp-767 {
+    border-radius: 32px;
+  }
+}
+
+.img {
+  height: 256px;
+  width: 100%;
+  overflow: hidden;
+
+  img {
+    height: 256px;
+    width: 100%;
+  }
+
+  @include vp-767 {
+    height: 221px;
+
+    img {
+      height: 221px;
+    }
+  }
+}
+
+.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+
+  padding: 30px 27px 40px 23px;
+  width: 100%;
+
+  @include vp-767 {
+    padding: 25px 19px 23px 19px;
+    gap: 17px;
+  }
+}
+
+.title {
+  grid-column: span 2;
+
+  font-family: $ff-neutral-face;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 103%;
+  color: $color-default-black;
+  text-align: start;
+
+  display: flex;
+  flex-direction: column;
+
+  span:last-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: block;
+
+    max-height: 25px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+  }
+}
+
+.wrappper {
+  grid-column: span 2;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+
+  @include vp-767 {
+    gap: 29px;
+  }
+}
+
+.beds,
+.square {
+  font-family: $ff-commissioner;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 13px;
+
+  color: $color-default-black;
+  opacity: 0.4;
+
+  width: fit-content;
+
+  svg {
+    color: $color-default-black;
+  }
+
+  @include vp-1023 {
+    font-size: 14px;
+    align-items: center;
+  }
+}
+
+.district,
+.developer {
+  grid-column: span 2;
+
+  font-family: $ff-commissioner;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  color: $color-default-black;
+  text-align: start;
+
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+
+  span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: block;
+
+    max-height: 16px;
+  }
+
+  span:first-child {
+    opacity: 0.4;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+  }
+}
+
+.price {
+  font-family: $ff-commissioner;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 100%;
+  color: $color-default-black;
+  text-align: start;
+
+  align-self: center;
+
+  @media (min-width: 1024px) and (max-width: 1300px) {
+    font-size: 20px;
+  }
+
+  @include vp-1023 {
+    font-size: 24px;
+  }
+}
+
+.link {
+  max-width: 152px;
+  width: 100%;
+
+  justify-self: flex-end;
+
+  a {
+    padding: 17px;
+  }
+
+  @include vp-1023 {
+    max-width: 50px;
+
+    a {
+      background-color: $color-java;
+      border-radius: 50%;
+      padding: 10px;
+      height: 50px;
+      width: 50px;
+
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        color: $color-default-white;
+      }
+    }
+  }
+}
