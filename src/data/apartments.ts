@@ -168,6 +168,19 @@ const mockApartments = [
     relevant: false,
     reliable: true
   },
+  {
+    imgWebp: Photo1,
+    link: '/apartment',
+    nameDistrict: 'Damac Hills, Dubai',
+    nameComplex: 'The Sunreise beach ',
+    nameDeveloper: 'DAMAC Properties',
+    price: '3 121 187',
+    type: 'апартаменты',
+    beds: 3,
+    square: '1,433',
+    relevant: true,
+    reliable: false
+  }
 ]
 
 export default mockApartments;
