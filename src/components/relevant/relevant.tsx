@@ -16,7 +16,7 @@ import styles from './relevant.module.scss';
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 
-import mockApartments from '@data/apartments';
+import mockProperties from '@data/properties';
 
 const Relevant = () => {
   const prevRef = useRef(null);
@@ -70,7 +70,7 @@ const Relevant = () => {
                 // @ts-ignore
                 swiper.params.navigation.nextEl = nextRef.current;
               }}>
-            {mockApartments.filter((item) => item.relevant).map(({ imgWebp, link, type, nameDeveloper, beds, square, price }, index) =>
+            {mockProperties.filter((item) => item.relevant).map(({ imgWebp, link, type, nameDeveloper, beds, square, price }, index) =>
               <SwiperSlide key={index}>
                 <a href={link} className={styles.card} target={'_blank'}>
                   <div className={styles.img}>
@@ -102,7 +102,7 @@ const Relevant = () => {
         {!isDesktop && (
           <>
             <ul className={styles.list}>
-              {mockApartments.slice(0, 4).map(({ imgWebp, link, type, nameDeveloper, beds, square, price }, index) =>
+              {mockProperties.slice(0, 4).map(({ imgWebp, link, type, nameDeveloper, beds, square, price }, index) =>
                 <li className={styles.item} key={index}>
                   <a href={link} className={styles.card}>
                     <div className={styles.img}>

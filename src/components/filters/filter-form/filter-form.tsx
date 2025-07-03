@@ -8,7 +8,7 @@ import styles from './filter-form.module.scss';
 
 import ArrowDown from '@assets/arrow-down.svg';
 import Dollar from '@assets/dollar.svg';
-import mockApartments from '@data/apartments';
+import mockProperties from '@data/properties';
 import Link from '@ui/link/link';
 
 const dealTypes = ['Купить', 'Арендовать'];
@@ -26,12 +26,12 @@ const FilterForm: React.FC = () => {
   const openMenu = clickedMenu ?? hoveredMenu;
   const [isMobile, setIsMobile] = useState(false);
 
-  const countsByType = mockApartments.reduce((acc, item) => {
+  const countsByType = mockProperties.reduce((acc, item) => {
     acc[item.type] = (acc[item.type] || 0) + 1;
     return acc;
   }, {} as Record<string, number>);
 
-  const totalCount = mockApartments.length;
+  const totalCount = mockProperties.length;
 
   useEffect(() => {
     const checkIsMobile = () => {

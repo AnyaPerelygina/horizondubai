@@ -6,7 +6,7 @@ import Photo5 from '@assets/images/apartments/photo-5.webp';
 import Photo6 from '@assets/images/apartments/photo-6.webp';
 import Photo7 from '@assets/images/apartments/photo-7.webp';
 
-const mockApartments = [
+const mockProperties = [
   {
     imgWebp: Photo1,
     link: '/apartment',
@@ -1155,4 +1155,4 @@ const mockApartments = [
   }
 ]
 
-export default mockApartments;
+export default mockProperties;

@@ -7,7 +7,7 @@ import Title from "@ui/title/title";
 
 import styles from './catalog-block.module.scss';
 
-import mockApartments from "@data/apartments";
+import mockProperties from "@data/properties";
 
 const CatalogBlock = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -22,9 +22,9 @@ const CatalogBlock = () => {
   let maxItems = 12;
   if (windowWidth < 768) maxItems = 10;
 
-  const totalPages = Math.ceil(mockApartments.length / maxItems);
+  const totalPages = Math.ceil(mockProperties.length / maxItems);
   const startIndex = (currentPage - 1) * maxItems;
-  const apartmentsToShow = mockApartments.slice(startIndex, startIndex + maxItems);
+  const apartmentsToShow = mockProperties.slice(startIndex, startIndex + maxItems);
 
   return (
     <section className={styles.root}>

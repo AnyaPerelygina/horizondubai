@@ -14,7 +14,7 @@ import Arrow from '@assets/arrow-small.svg';
 import ArrowRight from '@assets/arrow-right.svg';
 import Stamp from '@assets/stamp.svg';
 
-import mockApartments from '@data/apartments';
+import mockProperties from '@data/properties';
 
 const ReliableProjects = () => {
   const tabs = [
@@ -29,7 +29,7 @@ const ReliableProjects = () => {
   const nextRef = useRef(null);
   const [activeTab, setActiveTab] = useState('all');
 
-  const filteredProjects = mockApartments.filter(
+  const filteredProjects = mockProperties.filter(
     (item) =>
       item.reliable &&
       (activeTab === 'all' || item.type === activeTab)
