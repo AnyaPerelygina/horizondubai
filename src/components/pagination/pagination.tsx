@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
+import Container from '@ui/container/container';
+
 import styles from './pagination.module.scss';
 import { PaginationProps } from './pagination.types';
-import Container from '@ui/container/container';
 
 const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPageChange }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -27,7 +28,7 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
         pages.push(1, 2, '...', totalPages);
       }
     } else {
-      if (totalPages <= 7) {
+      if (totalPages <= 6) {
         for (let i = 1; i <= totalPages; i++) pages.push(i);
       } else {
         if (currentPage <= 4) {

@@ -204,8 +204,14 @@
       justify-content: center;
       align-items: center;
 
+      transition: background-color $trans-default;
+
       svg {
         color: $color-default-white;
+      }
+
+      @include hover-focus {
+        background-color: $color-default-black;
       }
     }
   }
