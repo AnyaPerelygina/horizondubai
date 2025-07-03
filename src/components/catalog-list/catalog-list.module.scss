@@ -5,6 +5,11 @@
   max-width: 1338px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 0 55px;
+
+  @include vp-767 {
+    padding: 0 0 10px;
+  }
 }
 
 .list {
