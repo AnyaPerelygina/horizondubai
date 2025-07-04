@@ -24,13 +24,13 @@ const CatalogBlock = () => {
 
   const totalPages = Math.ceil(mockProperties.length / maxItems);
   const startIndex = (currentPage - 1) * maxItems;
-  const apartmentsToShow = mockProperties.slice(startIndex, startIndex + maxItems);
+  const propertiesToShow = mockProperties.slice(startIndex, startIndex + maxItems);
 
   return (
     <section className={styles.root}>
       <Container className={styles.container}>
         <Title text={''} level={1} />
-        <CatalogList apartments={apartmentsToShow} />
+        <CatalogList properties={propertiesToShow} />
         <Pagination
           currentPage={currentPage}
           totalPages={totalPages}

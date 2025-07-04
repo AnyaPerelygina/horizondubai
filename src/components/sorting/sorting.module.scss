@@ -1,0 +1,124 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.root {
+  position: relative;
+  width: 100%;
+  margin: 0 0 165px auto;
+
+  display: flex;
+  justify-content: flex-end;
+
+  @include vp-767 {
+    justify-content: flex-start;
+    margin: 0 0 50px;
+  }
+}
+
+.selectButton {
+  font-family: $ff-commissioner;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: start;
+  color: $color-default-black;
+
+  cursor: pointer;
+
+  overflow: hidden;
+  border: 1px solid $color-default-black;
+  background-color: transparent;
+  width: 100%;
+  max-width: 245px;
+  max-height: 50px;
+  padding: 16px;
+  border-radius: 45px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  transition: color $trans-default, border $trans-default;
+
+  @include hover-focus {
+    color: $color-java;
+    border: 1px solid $color-java;
+
+    .arrow {
+      color: $color-java;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    padding: 13px;
+  }
+}
+
+.arrow {
+  height: 10px;
+  min-width: 10px;
+  color: $color-default-black;
+  transition: transform $trans-default, color $trans-default;
+
+  align-self: center;
+}
+
+.arrowRotated {
+  transform: rotate(180deg);
+}
+
+.selectList {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  position: absolute;
+  top: 60px;
+  right: 0;
+  z-index: 1;
+
+  background-color: $color-default-white;
+  border: 1px solid $color-gainsboro;
+  border-radius: 22px;
+  width: 100%;
+  max-width: 245px;
+  padding: 20px;
+
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: max-height $trans-default, opacity $trans-default, transform $trans-default;
+  pointer-events: none;
+
+  @include vp-767 {
+    font-size: 12px;
+    top: 50px;
+    right: unset;
+    left: 0;
+    padding: 13px;
+  }
+}
+
+.selectListVisible {
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.selectItem {
+  text-align: left;
+  color: $color-default-black;
+  transition: color $trans-default;
+  cursor: pointer;
+
+  padding: 5px 0;
+
+  @include hover-focus {
+    color: $color-java;
+  }
+}

@@ -6,6 +6,7 @@ export interface FiltersState {
   priceFrom: string;
   priceTo: string;
   location: string;
+  sortingType: string;
 }
 
 const initialState: FiltersState = {
@@ -14,6 +15,7 @@ const initialState: FiltersState = {
   priceFrom: '',
   priceTo: '',
   location: '',
+  sortingType: '',
 };
 
 const filtersSlice = createSlice({
