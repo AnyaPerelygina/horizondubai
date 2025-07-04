@@ -25,8 +25,6 @@ const Sorting = () => {
     dispatch(setFilters({ [field]: value }));
   };
 
-  console.log('Выбрана сортировка:', filters.sortingType);
-
   return (
     <div className={styles.root}>
       <button type="button" onClick={() => handleClick('sorting')} className={styles.selectButton}>
