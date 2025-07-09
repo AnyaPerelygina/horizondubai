@@ -1,0 +1,52 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.root {
+  font-family: $ff-commissioner;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: $color-default-black;
+  opacity: 0.65;
+  text-transform: capitalize;
+
+  margin: 0 0 88px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+
+  span:first-child {
+    text-transform: none;
+  }
+
+  span:last-child {
+    text-transform: lowercase;
+  }
+
+  @include vp-1023 {
+    font-size: 14px;
+    margin: 0 0 43px;
+  }
+}
+
+.dot {
+  position: relative;
+  width: 4px;
+  height: 4px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: $color-default-black;
+    opacity: 0.65;
+    border-radius: 50%;
+  }
+}

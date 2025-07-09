@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
-import CatalogList from "@components/catalog-list/catalog-list";
-import Pagination from "@components/pagination/pagination";
 import Container from "@ui/container/container";
 import CatalogTitle from "@components/catalog-title/catalog-title";
+import Breadcrumbs from '@components/breadcrumbs/breadcrumbs';
+import CatalogList from "@components/catalog-list/catalog-list";
+import Pagination from "@components/pagination/pagination";
 
 import styles from './catalog-block.module.scss';
 
@@ -41,9 +42,19 @@ const CatalogBlock = () => {
   const startIndex = (currentPage - 1) * maxItems;
   const propertiesToShow = filteredProperties.slice(startIndex, startIndex + maxItems);
 
+  const titleParts: string[] = [];
+
+  if (filters.dealType === 'Купить') titleParts.push('Продажа');
+  else if (filters.dealType === 'Арендовать') titleParts.push('Аренда');
+
+  if (filters.propertyType && filters.propertyType !== 'Любая недвижимость') {
+    titleParts.push(filters.propertyType);
+  }
+
   return (
     <section className={styles.root}>
       <Container className={styles.container}>
+        <Breadcrumbs totalCount={filteredProperties.length} filters={titleParts} />
         <CatalogTitle />
         <CatalogList properties={propertiesToShow} />
         <Pagination

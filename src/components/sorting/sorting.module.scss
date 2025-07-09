@@ -4,14 +4,17 @@
 .root {
   position: relative;
   width: 100%;
-  margin: 0 0 165px auto;
+  margin: 0 0 87px auto;
 
   display: flex;
   justify-content: flex-end;
 
+  @include vp-1023 {
+    margin: 0 0 50px;
+  }
+
   @include vp-767 {
     justify-content: flex-start;
-    margin: 0 0 50px;
   }
 }
 

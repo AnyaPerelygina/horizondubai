@@ -209,7 +209,7 @@ const FilterForm: React.FC = () => {
             <span className={styles.linkText}>Таунхаусы</span>
             <span className={styles.linkCount}>{countsByType['таунхаусы'] || 0}</span>
           </Link>
-          <Link href={'/catalog'} className={styles.filterLink}>
+          <Link href={'/catalog?propertyType=каталог'} className={styles.filterLink}>
             <span className={styles.linkText}>Все объекты в Дубае</span>
             <span className={styles.linkCount}>{totalCount}</span>
           </Link>
