@@ -10,8 +10,8 @@ export interface FiltersState {
 }
 
 const initialState: FiltersState = {
-  dealType: '',
-  propertyType: '',
+  dealType: 'Купить',
+  propertyType: 'Любая недвижимость',
   priceFrom: '',
   priceTo: '',
   location: '',

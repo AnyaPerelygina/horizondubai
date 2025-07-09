@@ -80,7 +80,16 @@ const FilterForm: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     dispatch(setFilters({ priceFrom, priceTo }));
-    navigate('/catalog');
+
+    // Собираем параметры в URL
+    const params = new URLSearchParams();
+
+    if (filters.dealType) params.set('dealType', filters.dealType);
+    if (filters.propertyType) params.set('propertyType', filters.propertyType);
+    if (priceFrom) params.set('priceFrom', priceFrom);
+    if (priceTo) params.set('priceTo', priceTo);
+
+    navigate(`/catalog?${params.toString()}`);
   };
 
   return (
@@ -184,19 +193,19 @@ const FilterForm: React.FC = () => {
         </form>
       ) : (
         <div className={styles.linksWrapper}>
-          <Link href={'/catalog'} className={styles.filterLink}>
+          <Link href={'/catalog?propertyType=апартаменты'} className={styles.filterLink}>
             <span className={styles.linkText}>Апартаменты</span>
             <span className={styles.linkCount}>{countsByType['апартаменты'] || 0}</span>
           </Link>
-          <Link href={'/catalog'} className={styles.filterLink}>
-            <span className={styles.linkText}>Пентаусы</span>
+          <Link href={'/catalog?propertyType=пентхаусы'} className={styles.filterLink}>
+            <span className={styles.linkText}>Пентхаусы</span>
             <span className={styles.linkCount}>{countsByType['пентхаусы'] || 0}</span>
           </Link>
-          <Link href={'/catalog'} className={styles.filterLink}>
+          <Link href={'/catalog?propertyType=виллы'} className={styles.filterLink}>
             <span className={styles.linkText}>Виллы</span>
             <span className={styles.linkCount}>{countsByType['виллы'] || 0}</span>
           </Link>
-          <Link href={'/catalog'} className={styles.filterLink}>
+          <Link href={'/catalog?propertyType=таунхаусы'} className={styles.filterLink}>
             <span className={styles.linkText}>Таунхаусы</span>
             <span className={styles.linkCount}>{countsByType['таунхаусы'] || 0}</span>
           </Link>

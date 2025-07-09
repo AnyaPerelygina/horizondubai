@@ -15,19 +15,19 @@ import YoutubeSvg from '@assets/youtube.svg';
 const Footer = () => {
   const navLinks = [
     {
-      href: '/catalog',
+      href: '/catalog?dealType=Купить',
       label: 'Продажа',
     },
     {
-      href: '/catalog',
+      href: '/catalog?dealType=Арендовать',
       label: 'Аренда',
     },
     {
-      href: '/catalog',
+      href: '/catalog?propertyType=Новостройки',
       label: 'Новостройки',
     },
     {
-      href: '/catalog',
+      href: '/catalog?propertyType=Виллы',
       label: 'Виллы',
     },
     {

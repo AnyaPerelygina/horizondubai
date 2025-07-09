@@ -18,7 +18,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo2,
@@ -31,7 +32,8 @@ const mockProperties = [
     beds: 3,
     square: '2,600',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo3,
@@ -44,7 +46,8 @@ const mockProperties = [
     beds: 2,
     square: '1,200',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo4,
@@ -57,7 +60,8 @@ const mockProperties = [
     beds: 5,
     square: '1,987',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo2,
@@ -70,7 +74,8 @@ const mockProperties = [
     beds: 4,
     square: '1,098',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo5,
@@ -84,7 +89,8 @@ const mockProperties = [
     square: '998',
     comment: 'сдача в 2027 году',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo6,
@@ -98,7 +104,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo1,
@@ -111,7 +118,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo4,
@@ -124,7 +132,8 @@ const mockProperties = [
     beds: 5,
     square: '1,987',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo7,
@@ -138,7 +147,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo6,
@@ -152,7 +162,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo3,
@@ -166,7 +177,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'sale'
   },
   {
     imgWebp: Photo1,
@@ -179,7 +191,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo1,
@@ -192,7 +205,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo2,
@@ -205,7 +219,8 @@ const mockProperties = [
     beds: 3,
     square: '2,600',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo3,
@@ -218,7 +233,8 @@ const mockProperties = [
     beds: 2,
     square: '1,200',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo4,
@@ -231,7 +247,8 @@ const mockProperties = [
     beds: 5,
     square: '1,987',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo2,
@@ -244,7 +261,8 @@ const mockProperties = [
     beds: 4,
     square: '1,098',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo5,
@@ -258,7 +276,8 @@ const mockProperties = [
     square: '998',
     comment: 'сдача в 2027 году',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo6,
@@ -272,7 +291,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo1,
@@ -285,7 +305,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo4,
@@ -298,7 +319,8 @@ const mockProperties = [
     beds: 5,
     square: '1,987',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo7,
@@ -312,7 +334,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo6,
@@ -326,7 +349,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo3,
@@ -340,7 +364,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'sale'
   },
   {
     imgWebp: Photo1,
@@ -353,7 +378,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo1,
@@ -366,7 +392,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo2,
@@ -379,7 +406,8 @@ const mockProperties = [
     beds: 3,
     square: '2,600',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo3,
@@ -392,7 +420,8 @@ const mockProperties = [
     beds: 2,
     square: '1,200',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo4,
@@ -405,7 +434,8 @@ const mockProperties = [
     beds: 5,
     square: '1,987',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo2,
@@ -418,7 +448,8 @@ const mockProperties = [
     beds: 4,
     square: '1,098',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo5,
@@ -432,7 +463,8 @@ const mockProperties = [
     square: '998',
     comment: 'сдача в 2027 году',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo1,
@@ -445,7 +477,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo2,
@@ -458,7 +491,8 @@ const mockProperties = [
     beds: 3,
     square: '2,600',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo3,
@@ -471,7 +505,8 @@ const mockProperties = [
     beds: 2,
     square: '1,200',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo4,
@@ -484,7 +519,8 @@ const mockProperties = [
     beds: 5,
     square: '1,987',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo2,
@@ -497,7 +533,8 @@ const mockProperties = [
     beds: 4,
     square: '1,098',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo5,
@@ -511,7 +548,8 @@ const mockProperties = [
     square: '998',
     comment: 'сдача в 2027 году',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo2,
@@ -524,7 +562,8 @@ const mockProperties = [
     beds: 4,
     square: '1,098',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo5,
@@ -538,7 +577,8 @@ const mockProperties = [
     square: '998',
     comment: 'сдача в 2027 году',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo6,
@@ -552,7 +592,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo1,
@@ -565,7 +606,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo4,
@@ -578,7 +620,8 @@ const mockProperties = [
     beds: 5,
     square: '1,987',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo7,
@@ -592,7 +635,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo6,
@@ -606,7 +650,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo3,
@@ -620,7 +665,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'sale'
   },
   {
     imgWebp: Photo1,
@@ -633,7 +679,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo1,
@@ -646,7 +693,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo2,
@@ -659,7 +707,8 @@ const mockProperties = [
     beds: 3,
     square: '2,600',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo3,
@@ -672,7 +721,8 @@ const mockProperties = [
     beds: 2,
     square: '1,200',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo4,
@@ -685,7 +735,8 @@ const mockProperties = [
     beds: 5,
     square: '1,987',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo2,
@@ -698,7 +749,8 @@ const mockProperties = [
     beds: 4,
     square: '1,098',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo5,
@@ -712,7 +764,8 @@ const mockProperties = [
     square: '998',
     comment: 'сдача в 2027 году',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo1,
@@ -725,7 +778,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo2,
@@ -738,7 +792,8 @@ const mockProperties = [
     beds: 3,
     square: '2,600',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo2,
@@ -751,7 +806,8 @@ const mockProperties = [
     beds: 4,
     square: '1,098',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'rent'
   },
   {
     imgWebp: Photo5,
@@ -765,7 +821,8 @@ const mockProperties = [
     square: '998',
     comment: 'сдача в 2027 году',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo6,
@@ -779,7 +836,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo1,
@@ -792,7 +850,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo4,
@@ -805,7 +864,8 @@ const mockProperties = [
     beds: 5,
     square: '1,987',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo7,
@@ -819,7 +879,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo6,
@@ -833,7 +894,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo3,
@@ -847,7 +909,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'sale'
   },
   {
     imgWebp: Photo1,
@@ -860,7 +923,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo1,
@@ -873,7 +937,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo2,
@@ -886,7 +951,8 @@ const mockProperties = [
     beds: 3,
     square: '2,600',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo3,
@@ -899,7 +965,8 @@ const mockProperties = [
     beds: 2,
     square: '1,200',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo4,
@@ -912,7 +979,8 @@ const mockProperties = [
     beds: 5,
     square: '1,987',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo2,
@@ -925,7 +993,8 @@ const mockProperties = [
     beds: 4,
     square: '1,098',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo5,
@@ -939,7 +1008,8 @@ const mockProperties = [
     square: '998',
     comment: 'сдача в 2027 году',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo1,
@@ -952,7 +1022,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo2,
@@ -965,7 +1036,8 @@ const mockProperties = [
     beds: 3,
     square: '2,600',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo6,
@@ -979,7 +1051,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo1,
@@ -992,7 +1065,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo4,
@@ -1005,7 +1079,8 @@ const mockProperties = [
     beds: 5,
     square: '1,987',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo7,
@@ -1019,7 +1094,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo6,
@@ -1033,7 +1109,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'rent'
   },
   {
     imgWebp: Photo3,
@@ -1047,7 +1124,8 @@ const mockProperties = [
     square: '998',
     comment: 'открыты продажи',
     relevant: false,
-    reliable: true
+    reliable: true,
+    deal: 'sale'
   },
   {
     imgWebp: Photo1,
@@ -1060,7 +1138,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo1,
@@ -1073,7 +1152,8 @@ const mockProperties = [
     beds: 3,
     square: '1,433',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo2,
@@ -1086,7 +1166,8 @@ const mockProperties = [
     beds: 3,
     square: '2,600',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo3,
@@ -1099,7 +1180,8 @@ const mockProperties = [
     beds: 2,
     square: '1,200',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo4,
@@ -1112,7 +1194,8 @@ const mockProperties = [
     beds: 5,
     square: '1,987',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo4,
@@ -1125,7 +1208,8 @@ const mockProperties = [
     beds: 5,
     square: '1,987',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo4,
@@ -1138,7 +1222,8 @@ const mockProperties = [
     beds: 5,
     square: '1,987',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   },
   {
     imgWebp: Photo4,
@@ -1151,7 +1236,8 @@ const mockProperties = [
     beds: 5,
     square: '1,987',
     relevant: true,
-    reliable: false
+    reliable: false,
+    deal: 'sale'
   }
 ]
 

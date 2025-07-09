@@ -54,6 +54,7 @@
   @include vp-767 {
     font-size: 12px;
     padding: 13px;
+    max-width: 100%;
   }
 }
 
@@ -100,6 +101,7 @@
     right: unset;
     left: 0;
     padding: 13px;
+    max-width: 100%;
   }
 }
 
