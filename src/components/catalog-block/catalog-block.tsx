@@ -12,6 +12,15 @@ import styles from './catalog-block.module.scss';
 import mockProperties from "@data/properties";
 import { RootState } from "@app/store";
 
+const typeMap: Record<string, string> = {
+  'Любая недвижимость': '',
+  'Новостройки': 'новостройки',
+  'Квартиры': 'квартиры',
+  'Апартаменты': 'апартаменты',
+  'Виллы': 'виллы',
+  'Пентхаусы': 'пентхаусы',
+};
+
 const CatalogBlock = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [currentPage, setCurrentPage] = useState(1);
@@ -32,13 +41,13 @@ const CatalogBlock = () => {
       : true;
 
     const propertyMatch = filters.propertyType && filters.propertyType !== 'Любая недвижимость'
-      ? item.type === filters.propertyType
+      ? item.type === typeMap[filters.propertyType]
       : true;
 
     return dealMatch && propertyMatch;
   });
 
-  const totalPages = Math.ceil(mockProperties.length / maxItems);
+  const totalPages = Math.ceil(filteredProperties.length / maxItems);
   const startIndex = (currentPage - 1) * maxItems;
   const propertiesToShow = filteredProperties.slice(startIndex, startIndex + maxItems);
 

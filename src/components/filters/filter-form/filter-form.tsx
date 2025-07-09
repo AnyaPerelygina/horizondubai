@@ -193,23 +193,23 @@ const FilterForm: React.FC = () => {
         </form>
       ) : (
         <div className={styles.linksWrapper}>
-          <Link href={'/catalog?propertyType=апартаменты'} className={styles.filterLink}>
+          <Link href={'/catalog?propertyType=Апартаменты'} className={styles.filterLink}>
             <span className={styles.linkText}>Апартаменты</span>
             <span className={styles.linkCount}>{countsByType['апартаменты'] || 0}</span>
           </Link>
-          <Link href={'/catalog?propertyType=пентхаусы'} className={styles.filterLink}>
+          <Link href={'/catalog?propertyType=Пентхаусы'} className={styles.filterLink}>
             <span className={styles.linkText}>Пентхаусы</span>
             <span className={styles.linkCount}>{countsByType['пентхаусы'] || 0}</span>
           </Link>
-          <Link href={'/catalog?propertyType=виллы'} className={styles.filterLink}>
+          <Link href={'/catalog?propertyType=Виллы'} className={styles.filterLink}>
             <span className={styles.linkText}>Виллы</span>
             <span className={styles.linkCount}>{countsByType['виллы'] || 0}</span>
           </Link>
-          <Link href={'/catalog?propertyType=таунхаусы'} className={styles.filterLink}>
+          <Link href={'/catalog?propertyType=Таунхаусы'} className={styles.filterLink}>
             <span className={styles.linkText}>Таунхаусы</span>
             <span className={styles.linkCount}>{countsByType['таунхаусы'] || 0}</span>
           </Link>
-          <Link href={'/catalog?propertyType=каталог'} className={styles.filterLink}>
+          <Link href={'/catalog'} className={styles.filterLink}>
             <span className={styles.linkText}>Все объекты в Дубае</span>
             <span className={styles.linkCount}>{totalCount}</span>
           </Link>

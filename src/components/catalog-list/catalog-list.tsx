@@ -34,23 +34,29 @@ const CatalogList = ({ properties }: CatalogListProps) => {
   return (
     <div className={styles.root}>
       <Sorting />
-      <ul className={styles.list}>
-        {sortedProperties.map(({imgWebp, price, type, beds, square, nameDeveloper, nameComplex, nameDistrict, link }, index) => (
-          <li className={styles.item} key={index}>
-            <CatalogCard
-              imgWebp={imgWebp}
-              price={price}
-              type={type}
-              beds={beds}
-              square={square}
-              nameDeveloper={nameDeveloper}
-              nameComplex={nameComplex}
-              nameDistrict={nameDistrict}
-              link={link}
-            />
-          </li>
-        ))}
-      </ul>
+      {sortedProperties.length === 0 ? (
+        <div className={styles.empty}>
+          Ничего не найдено
+        </div>
+      ) : (
+        <ul className={styles.list}>
+          {sortedProperties.map(({imgWebp, price, type, beds, square, nameDeveloper, nameComplex, nameDistrict, link }, index) => (
+            <li className={styles.item} key={index}>
+              <CatalogCard
+                imgWebp={imgWebp}
+                price={price}
+                type={type}
+                beds={beds}
+                square={square}
+                nameDeveloper={nameDeveloper}
+                nameComplex={nameComplex}
+                nameDistrict={nameDistrict}
+                link={link}
+              />
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   )
 }
