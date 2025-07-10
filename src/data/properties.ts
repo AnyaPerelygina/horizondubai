@@ -33,7 +33,8 @@ const mockProperties = [
     square: '2,600',
     relevant: true,
     reliable: false,
-    deal: 'sale'
+    deal: 'sale',
+    nearSea: true,
   },
   {
     imgWebp: Photo3,

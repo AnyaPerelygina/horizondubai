@@ -11,10 +11,14 @@
 
   @include vp-1023 {
     margin: 0 0 50px;
+    order: 0;
   }
 
   @include vp-767 {
+    width: auto;
     justify-content: flex-start;
+    margin: 0 0 46px;
+    padding: 0 20px;
   }
 }
 
@@ -54,10 +58,13 @@
     }
   }
 
+  @include vp-1023 {
+    max-width: 100%;
+  }
+
   @include vp-767 {
     font-size: 12px;
     padding: 13px;
-    max-width: 100%;
   }
 }
 
@@ -98,13 +105,19 @@
   transition: max-height $trans-default, opacity $trans-default, transform $trans-default;
   pointer-events: none;
 
+  @include vp-1023 {
+    max-width: 100%;
+  }
+
   @include vp-767 {
     font-size: 12px;
+
     top: 50px;
-    right: unset;
-    left: 0;
+    right: 20px;
+    left: 20px;
+
     padding: 13px;
-    max-width: 100%;
+    width: auto;
   }
 }
 

@@ -6,7 +6,7 @@
   display: flex;
 
   @include vp-767 {
-    padding: 20px 0;
+    padding: 20px;
   }
 }
 
@@ -70,11 +70,7 @@
   color: $color-default-white;
   transition: color $trans-default, background-color $trans-default;
   border: none;
-
-  @include hover-focus {
-    color: $color-default-white;
-    background-color: $color-java;
-  }
+  pointer-events: none;
 }
 
 .dots {

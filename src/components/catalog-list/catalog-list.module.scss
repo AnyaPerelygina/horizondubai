@@ -16,6 +16,86 @@
   }
 }
 
+.tabs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 19px;
+
+  width: 100%;
+  margin: 0 0 40px;
+
+  @include vp-1023 {
+    gap: 10px;
+    order: -1;
+  }
+
+  @include vp-767 {
+    flex-wrap: nowrap;
+    margin: 0 0 20px;
+    padding: 0 20px;
+
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.tabButton {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 42px;
+
+  background-color: transparent;
+  border: 1px solid $color-default-black;
+  border-radius: 45px;
+
+  font-family: $ff-commissioner;
+  font-size: 16px;
+  line-height: 100%;
+  color: $color-default-black;
+  text-align: center;
+
+  padding: 16px 30px;
+
+  transition: color $trans-default border $trans-default;
+
+  span {
+    white-space: nowrap;
+  }
+
+  @include hover-focus {
+    border: 1px solid $color-java;
+    color: $color-java;
+  }
+
+  @include vp-1023 {
+    font-size: 14px;
+    padding: 12px 23px 14px;
+    gap: 12px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+  }
+}
+
+.activeTab {
+  background-color: $color-default-black;
+  color: $color-default-white;
+
+  transition: background-color $trans-default;
+
+  @include hover-focus {
+    background-color: $color-java;
+    color: $color-default-white;
+  }
+}
+
 .list {
   margin: 0;
   padding: 0;
@@ -36,6 +116,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 29px;
+    padding: 0 20px;
   }
 }
 
@@ -63,5 +144,9 @@
   @include vp-1023 {
     font-size: 14px;
     margin: 0;
+  }
+
+  @include vp-767 {
+    padding: 0 20px;
   }
 }
