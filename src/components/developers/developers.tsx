@@ -17,42 +17,9 @@ import Developer1Mobile from '@assets/images/developers/developer-1-mobile.webp'
 import Developer1Png from '@assets/images/developers/developer-1.png';
 import Arrow from '@assets/arrow-small.svg';
 
-const Developers = () => {
-  const sliders = [
-    {
-      title: 'Serenia Residences',
-      text: 'Serenia Residences — это скрытая жемчужина на острове Пальма Джумейра, предназначенная для избранных. Эта великолепная недвижимость представляет собой частный жилой курорт, предлагающий элитную коллекцию апартаментов с 1, 2 и 3 спальнями, а также пентхаусы, занимающие половину этажа.',
-      link1: '/catalog',
-      link2: '/developer',
-      price: '43 200',
-      developerName: 'Serenia Residences'
-    },
-    {
-      title: 'Six Senses The Palm',
-      text: 'Six Senses The Palm - это захватывающий дух проект класса люкс, расположенный на Palm Jumeirah, одном из самых желанных мест для жизни в Дубае. Новый комплекс Six Senses Hotels Resorts Spas станет первым отелем с фирменными резиденциями в Объединенных Арабских Эмиратах.',
-      link1: '/catalog',
-      link2: '/developer',
-      price: '55 100',
-      developerName: 'Six Senses The Palm'
-    },
-    {
-      title: 'Palm Jumeirah',
-      text: 'Palm Jumeirah — это скрытая жемчужина на острове Пальма Джумейра, предназначенная для избранных. Эта великолепная недвижимость представляет собой частный жилой курорт, предлагающий элитную коллекцию апартаментов с 1, 2 и 3 спальнями, а также пентхаусы, занимающие половину этажа.',
-      link1: '/catalog',
-      link2: '/developer',
-      price: '96 800',
-      developerName: 'Palm Jumeirah'
-    },
-    {
-      title: 'Azizi Mina DAMAS',
-      text: 'Azizi Mina — это скрытая жемчужина на острове Пальма Джумейра, предназначенная для избранных. Эта великолепная недвижимость представляет собой частный жилой курорт, предлагающий элитную коллекцию апартаментов с 1, 2 и 3 спальнями, а также пентхаусы, занимающие половину этажа.',
-      link1: '/catalog',
-      link2: '/developer',
-      price: '36 700',
-      developerName: 'Azizi Mina'
-    }
-  ]
+import mockDevelopers from '@data/developers';
 
+const Developers = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
@@ -73,8 +40,6 @@ const Developers = () => {
           slidesPerView={1}
           spaceBetween={50}
           speed={1500}
-          effect='fade'
-          fadeEffect={{ crossFade: true }}
           breakpoints={{
             320: {
               allowTouchMove: true,
@@ -101,16 +66,16 @@ const Developers = () => {
             el: `.${styles.pagination}`
           }}
           className={styles.swiper}>
-          {sliders.map(({ title, link1, link2, text, price, developerName }, index) =>
-            <SwiperSlide key={index}>
+          {mockDevelopers.map(({ link1, text, price, nameDeveloper, developerKey }, index) =>
+            <SwiperSlide key={developerKey}>
               <div className={styles.wrapper}>
-                <Title text={title} level={3} className={styles.subTitle} />
+                <Title text={nameDeveloper} level={3} className={styles.subTitle} />
                 <div className={styles.text}>
                   <p>{text}</p>
                 </div>
                 <div className={styles.links}>
                   <Link text={'Объекты застройщика'} href={link1} className={styles.link} />
-                  <Link text={'Больше о застройщике'} href={link2} color={'blue'} className={styles.link} />
+                  <Link text={'Больше о застройщике'} href={`/developer/${developerKey}`} color={'blue'} className={styles.link} />
                 </div>
                 <div className={styles.description}>
                   <div className={styles.img}>
@@ -121,7 +86,7 @@ const Developers = () => {
                     </picture>
                   </div>
                   <div className={styles.info}>
-                    <span>{developerName}</span>
+                    <span>{nameDeveloper}</span>
                     <span>от {price}$</span>
                   </div>
                 </div>

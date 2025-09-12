@@ -40,8 +40,8 @@ const router = createBrowserRouter([
         path: '/apartment'
       },
       {
-        element: <DeveloperPage />,
-        path: '/developer'
+        element: <DeveloperPage key={window.location.pathname} />,
+        path: '/developer/:id'
       }
     ]
   }
