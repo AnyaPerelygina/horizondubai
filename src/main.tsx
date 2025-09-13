@@ -41,7 +41,7 @@ const router = createBrowserRouter([
       },
       {
         element: <DeveloperPage key={window.location.pathname} />,
-        path: '/developer/:id'
+        path: '/developers/:id'
       }
     ]
   }

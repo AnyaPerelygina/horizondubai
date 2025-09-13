@@ -75,7 +75,7 @@ const Developers = () => {
                 </div>
                 <div className={styles.links}>
                   <Link text={'Объекты застройщика'} href={link1} className={styles.link} />
-                  <Link text={'Больше о застройщике'} href={`/developer/${developerKey}`} color={'blue'} className={styles.link} />
+                  <Link text={'Больше о застройщике'} href={`/developers/${developerKey}`} color={'blue'} className={styles.link} />
                 </div>
                 <div className={styles.description}>
                   <div className={styles.img}>
