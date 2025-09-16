@@ -9,7 +9,7 @@ import Root from '@pages/root';
 import Home from '@pages/Home/Home';
 import CatalogPage from '@pages/CatalogPage/CatalogPage';
 import FavoritesPage from '@pages/FavoritesPage/FavoritesPage';
-import ApartmentPage from '@pages/ApartmentPage/ApartmentPage';
+import PropertyPage from '@pages/PropertyPage/PropertyPage';
 import DeveloperPage from '@pages/DeveloperPage/DeveloperPage';
 
 import '@styles/style.scss';
@@ -36,8 +36,8 @@ const router = createBrowserRouter([
         path: '/favorites'
       },
       {
-        element: <ApartmentPage />,
-        path: '/apartment'
+        element: <PropertyPage key={window.location.pathname} />,
+        path: '/property/:id'
       },
       {
         element: <DeveloperPage key={window.location.pathname} />,

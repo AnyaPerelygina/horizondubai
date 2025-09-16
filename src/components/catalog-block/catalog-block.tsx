@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "@app/store";
 
@@ -8,7 +7,6 @@ import Breadcrumbs from '@components/breadcrumbs/breadcrumbs';
 import CatalogList from "@components/catalog-list/catalog-list";
 
 import styles from './catalog-block.module.scss';
-
 import mockProperties from "@data/properties";
 
 const typeMap: Record<string, string> = {

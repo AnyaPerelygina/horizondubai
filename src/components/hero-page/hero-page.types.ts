@@ -1,4 +1,5 @@
 export type HeroPageProps = {
-  nameDeveloper: string;
+  title: string;
   photo: string;
+  pageType: 'property' | 'developer';
 }

@@ -1,15 +1,16 @@
-import Photo1 from '@assets/images/apartments/photo-1.webp';
-import Photo2 from '@assets/images/apartments/photo-2.webp';
-import Photo3 from '@assets/images/apartments/photo-3.webp';
-import Photo4 from '@assets/images/apartments/photo-4.webp';
-import Photo5 from '@assets/images/apartments/photo-5.webp';
-import Photo6 from '@assets/images/apartments/photo-6.webp';
-import Photo7 from '@assets/images/apartments/photo-7.webp';
+import Photo1 from '@assets/images/properties/photo-1.webp';
+import Photo2 from '@assets/images/properties/photo-2.webp';
+import Photo3 from '@assets/images/properties/photo-3.webp';
+import Photo4 from '@assets/images/properties/photo-4.webp';
+import Photo5 from '@assets/images/properties/photo-5.webp';
+import Photo6 from '@assets/images/properties/photo-6.webp';
+import Photo7 from '@assets/images/properties/photo-7.webp';
 
 const mockProperties = [
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -22,8 +23,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-june',
     imgWebp: Photo2,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The June ',
     nameDeveloper: 'DAMAC Properties',
@@ -37,8 +39,9 @@ const mockProperties = [
     nearSea: true,
   },
   {
+    propertyKey: 'the-palm-jumeirah',
     imgWebp: Photo3,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Palm Jumeirah',
     nameDeveloper: 'DAMAC Properties',
@@ -51,8 +54,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'goodness',
     imgWebp: Photo4,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Goodness',
     nameDeveloper: 'DAMAC Properties',
@@ -65,8 +69,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'horizon-dubai',
     imgWebp: Photo2,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Horizon Dubai',
     nameDeveloper: 'DAMAC Properties',
@@ -79,8 +84,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'adress-jumerald-beach-resort',
     imgWebp: Photo5,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Adress Jumerald Beach Resort',
     nameDeveloper: 'DAMAC Properties',
@@ -94,8 +100,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'azizi-mina-palm-jumeirah',
     imgWebp: Photo6,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Azizi mina palm jumeirah',
     nameDeveloper: 'DAMAC Properties',
@@ -109,8 +116,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -123,8 +131,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'goodness',
     imgWebp: Photo4,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Goodness',
     nameDeveloper: 'DAMAC Properties',
@@ -137,6 +146,7 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-garden-collection-at-dubai',
     imgWebp: Photo7,
     link: '/villa',
     nameDistrict: 'Horizon, Dubai',
@@ -152,8 +162,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'azizi-mina-palm-jumeirah',
     imgWebp: Photo6,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Azizi mina palm jumeirah',
     nameDeveloper: 'DAMAC Properties',
@@ -167,8 +178,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'the-garden-collection-at-dubai',
     imgWebp: Photo3,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Garden Collection at Dubai',
     nameDeveloper: 'DAMAC Properties',
@@ -182,8 +194,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -196,8 +209,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -210,8 +224,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-june',
     imgWebp: Photo2,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The June ',
     nameDeveloper: 'DAMAC Properties',
@@ -224,8 +239,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-palm-jumeirah',
     imgWebp: Photo3,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Palm Jumeirah',
     nameDeveloper: 'DAMAC Properties',
@@ -238,8 +254,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'goodness',
     imgWebp: Photo4,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Goodness',
     nameDeveloper: 'DAMAC Properties',
@@ -252,8 +269,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'horizon-dubai',
     imgWebp: Photo2,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Horizon Dubai',
     nameDeveloper: 'DAMAC Properties',
@@ -266,8 +284,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'adress-jumerald-beach-resort',
     imgWebp: Photo5,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Adress Jumerald Beach Resort',
     nameDeveloper: 'DAMAC Properties',
@@ -281,8 +300,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'azizi-mina-palm-jumeirah',
     imgWebp: Photo6,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Azizi mina palm jumeirah',
     nameDeveloper: 'DAMAC Properties',
@@ -296,8 +316,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -310,8 +331,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'goodness',
     imgWebp: Photo4,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Goodness',
     nameDeveloper: 'DAMAC Properties',
@@ -324,6 +346,7 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-garden-collection-at-dubai',
     imgWebp: Photo7,
     link: '/villa',
     nameDistrict: 'Horizon, Dubai',
@@ -339,8 +362,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'azizi-mina-palm-jumeirah',
     imgWebp: Photo6,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Azizi mina palm jumeirah',
     nameDeveloper: 'DAMAC Properties',
@@ -354,8 +378,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'the-garden-collection-at-dubai',
     imgWebp: Photo3,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Garden Collection at Dubai',
     nameDeveloper: 'DAMAC Properties',
@@ -369,8 +394,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -383,8 +409,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -397,8 +424,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-june',
     imgWebp: Photo2,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The June ',
     nameDeveloper: 'DAMAC Properties',
@@ -411,8 +439,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-palm-jumeirah',
     imgWebp: Photo3,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Palm Jumeirah',
     nameDeveloper: 'DAMAC Properties',
@@ -425,8 +454,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'goodness',
     imgWebp: Photo4,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Goodness',
     nameDeveloper: 'DAMAC Properties',
@@ -439,8 +469,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'horizon-dubai',
     imgWebp: Photo2,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Horizon Dubai',
     nameDeveloper: 'DAMAC Properties',
@@ -453,8 +484,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'adress-jumerald-beach-resort',
     imgWebp: Photo5,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Adress Jumerald Beach Resort',
     nameDeveloper: 'DAMAC Properties',
@@ -468,8 +500,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -482,8 +515,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-june',
     imgWebp: Photo2,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The June ',
     nameDeveloper: 'DAMAC Properties',
@@ -496,8 +530,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-palm-jumeirah',
     imgWebp: Photo3,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Palm Jumeirah',
     nameDeveloper: 'DAMAC Properties',
@@ -510,8 +545,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'goodness',
     imgWebp: Photo4,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Goodness',
     nameDeveloper: 'DAMAC Properties',
@@ -524,8 +560,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'horizon-dubai',
     imgWebp: Photo2,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Horizon Dubai',
     nameDeveloper: 'DAMAC Properties',
@@ -538,8 +575,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'adress-jumerald-beach-resort',
     imgWebp: Photo5,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Adress Jumerald Beach Resort',
     nameDeveloper: 'DAMAC Properties',
@@ -553,8 +591,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'horizon-dubai',
     imgWebp: Photo2,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Horizon Dubai',
     nameDeveloper: 'DAMAC Properties',
@@ -567,8 +606,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'adress-jumerald-beach-resort',
     imgWebp: Photo5,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Adress Jumerald Beach Resort',
     nameDeveloper: 'DAMAC Properties',
@@ -582,8 +622,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'azizi-mina-palm-jumeirah',
     imgWebp: Photo6,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Azizi mina palm jumeirah',
     nameDeveloper: 'DAMAC Properties',
@@ -597,8 +638,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -611,8 +653,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'goodness',
     imgWebp: Photo4,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Goodness',
     nameDeveloper: 'DAMAC Properties',
@@ -625,6 +668,7 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-garden-collection-at-dubai',
     imgWebp: Photo7,
     link: '/villa',
     nameDistrict: 'Horizon, Dubai',
@@ -640,8 +684,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'azizi-mina-palm-jumeirah',
     imgWebp: Photo6,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Azizi mina palm jumeirah',
     nameDeveloper: 'DAMAC Properties',
@@ -655,8 +700,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'the-garden-collection-at-dubai',
     imgWebp: Photo3,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Garden Collection at Dubai',
     nameDeveloper: 'DAMAC Properties',
@@ -670,8 +716,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -684,8 +731,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -698,8 +746,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-june',
     imgWebp: Photo2,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The June ',
     nameDeveloper: 'DAMAC Properties',
@@ -712,8 +761,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-palm-jumeirah',
     imgWebp: Photo3,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Palm Jumeirah',
     nameDeveloper: 'DAMAC Properties',
@@ -726,8 +776,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'goodness',
     imgWebp: Photo4,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Goodness',
     nameDeveloper: 'DAMAC Properties',
@@ -740,8 +791,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'horizon-dubai',
     imgWebp: Photo2,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Horizon Dubai',
     nameDeveloper: 'DAMAC Properties',
@@ -754,8 +806,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'adress-jumerald-beach-resort',
     imgWebp: Photo5,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Adress Jumerald Beach Resort',
     nameDeveloper: 'DAMAC Properties',
@@ -769,8 +822,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -783,8 +837,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-june',
     imgWebp: Photo2,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The June ',
     nameDeveloper: 'DAMAC Properties',
@@ -797,8 +852,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'horizon-dubai',
     imgWebp: Photo2,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Horizon Dubai',
     nameDeveloper: 'DAMAC Properties',
@@ -811,8 +867,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'adress-jumerald-beach-resort',
     imgWebp: Photo5,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Adress Jumerald Beach Resort',
     nameDeveloper: 'DAMAC Properties',
@@ -826,8 +883,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'azizi-mina-palm-jumeirah',
     imgWebp: Photo6,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Azizi mina palm jumeirah',
     nameDeveloper: 'DAMAC Properties',
@@ -841,8 +899,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -855,8 +914,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'goodness',
     imgWebp: Photo4,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Goodness',
     nameDeveloper: 'DAMAC Properties',
@@ -869,6 +929,7 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-garden-collection-at-dubai',
     imgWebp: Photo7,
     link: '/villa',
     nameDistrict: 'Horizon, Dubai',
@@ -884,8 +945,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'azizi-mina-palm-jumeirah',
     imgWebp: Photo6,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Azizi mina palm jumeirah',
     nameDeveloper: 'DAMAC Properties',
@@ -899,8 +961,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'the-garden-collection-at-dubai',
     imgWebp: Photo3,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Garden Collection at Dubai',
     nameDeveloper: 'DAMAC Properties',
@@ -914,8 +977,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -928,8 +992,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -942,8 +1007,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-june',
     imgWebp: Photo2,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The June ',
     nameDeveloper: 'DAMAC Properties',
@@ -956,8 +1022,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-palm-jumeirah',
     imgWebp: Photo3,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Palm Jumeirah',
     nameDeveloper: 'DAMAC Properties',
@@ -970,8 +1037,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'goodness',
     imgWebp: Photo4,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Goodness',
     nameDeveloper: 'DAMAC Properties',
@@ -984,8 +1052,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'horizon-dubai',
     imgWebp: Photo2,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Horizon Dubai',
     nameDeveloper: 'DAMAC Properties',
@@ -998,8 +1067,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'adress-jumerald-beach-resort',
     imgWebp: Photo5,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Adress Jumerald Beach Resort',
     nameDeveloper: 'DAMAC Properties',
@@ -1013,8 +1083,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -1027,8 +1098,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-june',
     imgWebp: Photo2,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The June ',
     nameDeveloper: 'DAMAC Properties',
@@ -1041,8 +1113,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'azizi-mina-palm-jumeirah',
     imgWebp: Photo6,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Azizi mina palm jumeirah',
     nameDeveloper: 'DAMAC Properties',
@@ -1056,8 +1129,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -1070,8 +1144,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'goodness',
     imgWebp: Photo4,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Goodness',
     nameDeveloper: 'DAMAC Properties',
@@ -1084,6 +1159,7 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-garden-collection-at-dubai',
     imgWebp: Photo7,
     link: '/villa',
     nameDistrict: 'Horizon, Dubai',
@@ -1099,8 +1175,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'azizi-mina-palm-jumeirah',
     imgWebp: Photo6,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Azizi mina palm jumeirah',
     nameDeveloper: 'DAMAC Properties',
@@ -1114,8 +1191,9 @@ const mockProperties = [
     deal: 'rent'
   },
   {
+    propertyKey: 'the-garden-collection-at-dubai',
     imgWebp: Photo3,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Garden Collection at Dubai',
     nameDeveloper: 'DAMAC Properties',
@@ -1129,8 +1207,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -1143,8 +1222,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-sunreise-beach',
     imgWebp: Photo1,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Sunreise beach ',
     nameDeveloper: 'DAMAC Properties',
@@ -1157,8 +1237,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-june',
     imgWebp: Photo2,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The June ',
     nameDeveloper: 'DAMAC Properties',
@@ -1171,8 +1252,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'the-palm-jumeirah',
     imgWebp: Photo3,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'The Palm Jumeirah',
     nameDeveloper: 'DAMAC Properties',
@@ -1185,8 +1267,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'goodness',
     imgWebp: Photo4,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Goodness',
     nameDeveloper: 'DAMAC Properties',
@@ -1199,8 +1282,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'goodness',
     imgWebp: Photo4,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Goodness',
     nameDeveloper: 'DAMAC Properties',
@@ -1213,8 +1297,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'goodness',
     imgWebp: Photo4,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Goodness',
     nameDeveloper: 'DAMAC Properties',
@@ -1227,8 +1312,9 @@ const mockProperties = [
     deal: 'sale'
   },
   {
+    propertyKey: 'goodness',
     imgWebp: Photo4,
-    link: '/apartment',
+    link: '/property',
     nameDistrict: 'Damac Hills, Dubai',
     nameComplex: 'Goodness',
     nameDeveloper: 'DAMAC Properties',

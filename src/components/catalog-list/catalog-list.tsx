@@ -109,7 +109,7 @@ const CatalogList = ({ properties }: CatalogListProps) => {
         <>
           <ul className={styles.list}>
             {paginatedProperties.map(({
-              imgWebp, price, type, beds, square,
+              propertyKey, imgWebp, price, type, beds, square,
               nameDeveloper, nameComplex, nameDistrict, link
             }, index) => (
               <li className={styles.item} key={index}>
@@ -122,7 +122,7 @@ const CatalogList = ({ properties }: CatalogListProps) => {
                   nameDeveloper={nameDeveloper}
                   nameComplex={nameComplex}
                   nameDistrict={nameDistrict}
-                  link={link}
+                  link={`/property/${propertyKey}`}
                 />
               </li>
             ))}

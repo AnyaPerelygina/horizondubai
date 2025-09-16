@@ -18,9 +18,9 @@ export default function DeveloperPage() {
   return (
     <>
       <HeroPage
-        nameDeveloper={developer.nameDeveloper}
+        title={developer.nameDeveloper}
         photo={developer.photo}
-      />
+        pageType={'developer'} />
       <PhoneBlock />
     </>
   );

@@ -8,4 +8,5 @@ export type CatalogCardProps = {
   nameComplex: string;
   nameDistrict: string;
   link: string;
+  propertyKey?: string;
 };
