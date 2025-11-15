@@ -2,9 +2,29 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import mockProperties from '@data/properties';
 import HeroPage from '@components/hero-page/hero-page';
+import Subnav from '@components/subnav/subnav';
 import PhoneBlock from '@components/phone-block/phone-block';
 
 export default function PropertiesPage() {
+  const navLinks = [
+    {
+      href: '#',
+      label: 'Цены',
+    },
+    {
+      href: '#',
+      label: 'Описание',
+    },
+    {
+      href: '#',
+      label: 'FAQ',
+    },
+    {
+      href: '#',
+      label: 'Карта',
+    }
+  ]
+
   const { id } = useParams<{ id: string }>();
   const [property, setProperty] = useState<typeof mockProperties[0] | null>(null);
 
@@ -21,6 +41,7 @@ export default function PropertiesPage() {
         title={property.nameComplex}
         photo={property.imgWebp}
         pageType={'property'} />
+      <Subnav navLinks={navLinks} />
       <PhoneBlock />
     </>
   );

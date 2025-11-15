@@ -6,7 +6,7 @@ import Subnav from '@components/subnav/subnav';
 import PhoneBlock from '@components/phone-block/phone-block';
 
 export default function DeveloperPage() {
-    const navLinks = [
+  const navLinks = [
     {
       href: '#',
       label: 'Параметры',
@@ -17,11 +17,7 @@ export default function DeveloperPage() {
     },
     {
       href: '#',
-      label: 'Застройщики',
-    },
-    {
-      href: '/catalog?propertyType=Виллы',
-      label: 'Виллы',
+      label: 'О застройщике',
     },
     {
       href: '#',

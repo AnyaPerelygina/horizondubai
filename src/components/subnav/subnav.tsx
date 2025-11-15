@@ -11,7 +11,6 @@ const Subnav = ({ onLinkClick, navLinks }: SubnavProps) => {
           <li key={href} className={styles.item}>
             <Link onClick={onLinkClick} to={href} className={styles.link}>
               <span data-hover={label}>{label}</span>
-              <span className={styles.line}></span>
             </Link>
           </li>
         ))}
