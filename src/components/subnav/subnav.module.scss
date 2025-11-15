@@ -1,0 +1,64 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.wrapper {
+  background-color: $color-java;
+
+  max-height: 127px;
+  height: auto;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0 60px;
+  max-width: 1460px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.link {
+  position: relative;
+  z-index: 0;
+
+  font-family: $ff-neutral-face;
+  font-size: 24px;
+  line-height: 100%;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: $color-default-white;
+  transition: color $trans-default;
+
+  padding: 51.5px 25.5px;
+  display: inline-block;
+  height: 100%;
+
+  &::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    content: "";
+    z-index: 1;
+    width: 100%;
+    height: 4px;
+    background-color: $color-default-white;
+    border-radius: 5px;
+    display: block;
+    opacity: 0;
+    transition: opacity $trans-default;
+  }
+
+  @include hover-focus {
+    color: $color-default-white;
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
