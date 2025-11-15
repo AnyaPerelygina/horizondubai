@@ -37,7 +37,6 @@
   text-transform: uppercase;
 
   color: $color-default-white;
-  transition: color $trans-default;
 
   padding: 51.5px 25.5px;
   display: flex;
@@ -64,10 +63,31 @@
   }
 
   @include hover-focus {
-    color: $color-default-white;
-
     &::after {
       opacity: 1;
     }
   }
+
+  @include active {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &.active::after {
+    opacity: 1;
+  }
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  height: 300px;
+  width: 100%;
+  background-color: $color-default-white;
+}
+
+.dropdown.open {
+  display: block;
 }

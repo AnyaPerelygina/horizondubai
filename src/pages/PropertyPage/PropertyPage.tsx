@@ -8,19 +8,19 @@ import PhoneBlock from '@components/phone-block/phone-block';
 export default function PropertiesPage() {
   const navLinks = [
     {
-      href: '#',
+      href: '#price',
       label: 'Цены',
     },
     {
-      href: '#',
+      href: '#description',
       label: 'Описание',
     },
     {
-      href: '#',
+      href: '#faq',
       label: 'FAQ',
     },
     {
-      href: '#',
+      href: '#map',
       label: 'Карта',
     }
   ]

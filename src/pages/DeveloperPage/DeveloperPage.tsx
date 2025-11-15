@@ -8,23 +8,23 @@ import PhoneBlock from '@components/phone-block/phone-block';
 export default function DeveloperPage() {
   const navLinks = [
     {
-      href: '#',
+      href: '#parametrs',
       label: 'Параметры',
     },
     {
-      href: '#',
+      href: '#description',
       label: 'Описание',
     },
     {
-      href: '#',
+      href: '#aboutdeveloper',
       label: 'О застройщике',
     },
     {
-      href: '#',
+      href: '#documents',
       label: 'Документы',
     },
     {
-      href: '#',
+      href: '#map',
       label: 'Карта',
     }
   ]
